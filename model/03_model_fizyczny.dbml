@@ -1,0 +1,341 @@
+// =====================================================================
+//  c. MODEL FIZYCZNY  —  PostgreSQL 15+
+//  Notacja: DBML (dbdiagram.io) — wersja do wizualizacji.
+// =====================================================================
+
+Project magazyn {
+  database_type: 'PostgreSQL'
+  Note: 'Magazyn przedsiebiorstwa budowlanego. Schemat: wms. Kodowanie UTF-8, collation pl_PL.UTF-8.'
+}
+
+// ------------------------- TYPY WYLICZENIOWE -------------------------
+
+Enum user_type {
+  admin
+  warehouseman
+  worker
+}
+Enum section_type {
+  area
+  rack
+  shelf
+}
+Enum unit_type {
+  pcs
+  kg
+  m
+  l
+}
+Enum permission_type {
+  full_access
+  edit
+  preview
+  denied
+}
+Enum movement_type {
+  receipt
+  issue
+  return
+  consumption
+  transfer
+  disposal
+  adjustment
+}
+Enum loan_status {
+  open
+  partially_returned
+  settled
+  cancelled
+}
+
+// ------------------------- TABELE ------------------------------------
+
+Table app_user {
+  id             bigint    [pk, increment, note: 'GENERATED ALWAYS AS IDENTITY']
+  login          varchar(50)  [not null]
+  password_hash  varchar(60)  [not null]
+  first_name     varchar(50)  [not null]
+  last_name      varchar(50)  [not null]
+  contact_number varchar(20)  [null]
+  address        varchar(200) [null]
+  user_type      user_type    [not null]
+  is_active      boolean      [not null, default: true]
+  created_at     timestamptz  [not null, default: `now()`]
+
+  indexes {
+    user_type [name: 'idx_app_user_type_active']
+    (last_name, first_name) [name: 'idx_app_user_name']
+    login [unique, name: 'uq_app_user_login']
+  }
+
+  Note: '''
+  CHECK ck_app_user_login     : login ~ '^[a-z0-9._-]{3,50}$'
+  CHECK ck_app_user_names     : btrim(first_name) <> '' AND btrim(last_name) <> ''
+  CHECK ck_app_user_phone     : contact_number IS NULL OR contact_number ~ '^\+?[0-9 ()-]{7,20}$'
+  CHECK ck_app_user_address   : address IS NULL OR btrim(address) <> ''
+  Role przy wydaniu pilnuje wyzwalacz trg_loan_roles, a nie zlozony klucz obcy —
+      wybrane dla czytelnych komunikatow bledow.
+  '''
+}
+
+Table warehouse {
+  id      bigint       [pk, increment]
+  name    varchar(100) [not null]
+  address varchar(200) [not null]
+
+  indexes {
+    name [unique, name: 'uq_warehouse_name', note: 'Nazwa magazynu niepowtarzalna w firmie — magazynier wybiera magazyn po nazwie, nie po id.']
+  }
+
+  Note: '''
+  CHECK ck_warehouse_name : btrim(name) <> ''
+  '''
+}
+
+Table section {
+  id                bigint       [pk, increment]
+  warehouse_id      bigint       [not null, ref: > warehouse.id]
+  parent_section_id bigint       [null, ref: > section.id]
+  section_name      varchar(100) [not null]
+  section_type      section_type [not null]
+
+  indexes {
+    (warehouse_id, parent_section_id, section_name) [unique, name: 'uq_section_name_in_parent']
+    parent_section_id [name: 'idx_section_parent', note: 'Strona wskazujaca FK rekurencyjnego — bez tego kazde usuniecie sekcji skanuje tabele w poszukiwaniu dzieci. Obsluguje tez przejscie w dol hierarchii w widoku v_section_path.']
+    warehouse_id [name: 'idx_section_warehouse', note: 'Strona wskazujaca FK do warehouse oraz zapytanie o wszystkie sekcje magazynu.']
+    (id, warehouse_id) [unique, name: 'uq_section_id_warehouse', note: 'Nadklucz, nie klucz kandydujacy — id samo jest kluczem glownym. Istnieje wylacznie jako zaczep pod zlozony FK fk_section_parent, ktory wymusza, ze rodzic lezy w tym samym magazynie.']
+  }
+
+  Note: '''
+  CHECK ck_section_no_self : parent_section_id IS DISTINCT FROM id
+  CHECK ck_section_name    : btrim(section_name) <> ''
+
+  FK ZLOZONY fk_section_parent:
+      (parent_section_id, warehouse_id) -> section(id, warehouse_id)
+      — warehouse_id stoi po OBU stronach strzalki, wiec rodzic musi lezec
+        w tym samym magazynie co dziecko. Deklaratywnie, bez wyzwalacza.
+      — parent_section_id = NULL wylacza sprawdzenie (domyslny MATCH SIMPLE)
+        i to wlasnie dopuszcza korzenie hierarchii. Przy MATCH FULL korzenie
+        byłyby niemozliwe, bo warehouse_id jest NOT NULL.
+      — wymaga klucza pomocniczego uq_section_id_warehouse UNIQUE (id, warehouse_id)
+
+  CHECK ck_section_root_is_area : parent_section_id IS NOT NULL
+                                  OR section_type = 'area'
+      — korzen hierarchii musi byc strefa. Regula patrzy tylko na kolumny
+        tego samego wiersza, wiec wystarcza CHECK; wyzwalacz bylby zbedny.
+
+  TRIGGER trg_section_hierarchy — dwie reguly, ktorych CHECK wyrazic NIE MOZE,
+      bo siegaja do wiersza RODZICA (PostgreSQL odrzuca podzapytania w CHECK:
+      "cannot use subquery in check constraint"):
+      1. dziecko musi lezec GLEBIEJ niz rodzic:
+         fn_section_level(dziecko) > fn_section_level(rodzic),
+         gdzie area=1, rack=2, shelf=3. Przeskakiwanie poziomow dozwolone
+         (polka wprost pod strefa), odwrocenie nie.
+      2. brak cykli — petla po przodkach z limitem glebokosci 100.
+         Przy obecnej regule 1 cykl jest nieosiagalny (poziomy rosna w dol),
+         wiec to druga linia obrony na wypadek poluzowania porzadku poziomow.
+  '''
+}
+
+Table item_type {
+  id            bigint       [pk, increment]
+  name          varchar(100) [not null]
+  short_name    varchar(20)  [not null]
+  is_serialized boolean      [not null, default: false]
+  is_consumable boolean      [not null, default: false]
+  unit          unit_type    [not null, default: 'pcs']
+
+  indexes {
+    (id, is_serialized, is_consumable) [unique, name: 'uq_item_type_flags']
+    name       [unique, name: 'uq_item_type_name']
+    short_name [unique, name: 'uq_item_type_short']
+  }
+
+  Note: '''
+  CHECK ck_item_type_unit  : NOT is_serialized OR unit = 'pcs'
+      — rzecz ewidencjonowana indywidualnie liczy sie w sztukach
+  CHECK ck_item_type_flags : NOT (is_serialized AND is_consumable)
+      — narzedzie z numerem seryjnym nie jest materialem zuzywalnym
+  UNIQUE (id, is_serialized, is_consumable) : klucz pomocniczy dla zlozonego FK z item
+  '''
+}
+
+Table item {
+  id            bigint        [pk, increment]
+  item_type_id  bigint        [not null, ref: > item_type.id]
+  section_id    bigint        [not null, ref: > section.id]
+  is_serialized boolean       [not null]
+  is_consumable boolean       [not null]
+  serial_number varchar(50)   [null]
+  quantity      "numeric(12,3)" [not null, default: 0]
+  created_at    timestamptz   [not null, default: `now()`]
+
+  indexes {
+    item_type_id [name: 'idx_item_type', note: 'Strona WSKAZUJACA klucza obcego. PostgreSQL indeksuje automatycznie tylko strone wskazywana, wiec bez tego kazde usuniecie typu skanuje cala tabele item (ON DELETE RESTRICT sprawdza zawsze). Obsluguje tez zapytanie o wszystkie egzemplarze danego typu.']
+    section_id [name: 'idx_item_section', note: 'Strona WSKAZUJACA klucza obcego do section — ten sam powod co wyzej. Dodatkowo obsluguje zapytanie o zawartosc sekcji i zlaczenie w widoku v_item_stock.']
+    (item_type_id, serial_number) [unique, name: 'uq_item_serial', note: 'REGULA, nie optymalizacja: numer seryjny niepowtarzalny w obrebie typu. Indeks czesciowy WHERE serial_number IS NOT NULL — predykat jest tu tylko oszczednoscia miejsca, bo w indeksie unikalnym NULL <> NULL i partie bez numeru i tak sie nie kloca.']
+    (item_type_id, section_id) [unique, name: 'uq_item_bulk_per_section', note: 'REGULA: jedna partia danego typu na sekcje. Indeks czesciowy WHERE NOT is_serialized — tu predykat jest KONIECZNY dla poprawnosci, bo bez niego dwie wiertarki tego samego modelu na jednej polce (ta sama para kolumn) zostalyby odrzucone.']
+    (id, is_consumable) [unique, name: 'uq_item_id_consumable', note: 'Nadklucz, nie klucz kandydujacy — id samo jest juz kluczem glownym, wiec zero nowej informacji o unikalnosci. Istnieje wylacznie jako zaczep pod zlozony FK z loan_line (item_id, is_consumable).']
+    (item_type_id, section_id) [name: 'idx_item_available', note: 'Indeks czesciowy WHERE quantity > 0 pod zapytanie co jest w magazynie — najczestsze u wszystkich trzech rol. Czesciowy, bo to zapytanie zawsze filtruje po tym samym warunku.']
+  }
+
+  Note: '''
+  FK ZLOZONY fk_item_type:
+      (item_type_id, is_serialized, is_consumable)
+          -> item_type(id, is_serialized, is_consumable)
+      — kopie flag nie moga sie rozjechac z katalogiem
+  UNIQUE (id, is_consumable) : klucz pomocniczy dla zlozonego FK z loan_line
+  CHECK ck_item_tracking:
+      (is_serialized AND quantity IN (0,1) AND serial_number IS NOT NULL)
+   OR (NOT is_serialized AND serial_number IS NULL)
+  DZIEDZINA qty (ck_qty_nonneg) : quantity >= 0 — nie osobny CHECK na tabeli,
+      tylko ograniczenie dziedziny uzytej jako typ kolumny.
+      Dla rzeczy seryjnej quantity = 0 oznacza egzemplarz zlikwidowany.
+  CHECK ck_item_serial        : serial_number IS NULL OR btrim(serial_number) <> ''
+  uq_item_serial            — indeks CZESCIOWY WHERE serial_number IS NOT NULL.
+      Predykat jest tu wylacznie OPTYMALIZACJA: w indeksie unikalnym NULL <> NULL,
+      wiec partie bez numeru i tak sie nie kloca. Zawezenie trzyma indeks maly
+      (obejmuje same narzedzia, nie wszystkie 10 000 wierszy).
+  uq_item_bulk_per_section  — indeks CZESCIOWY WHERE NOT is_serialized.
+      Predykat jest tu KONIECZNY dla poprawnosci: bez niego dwie wiertarki tego
+      samego modelu na jednej polce (ta sama para item_type_id, section_id)
+      zostalyby odrzucone. Regula dotyczy tylko wierszy zbiorczych:
+      jedna partia danego typu na sekcje.
+  idx_item_available        — indeks CZESCIOWY WHERE quantity > 0, pod zapytanie
+      "co jest w magazynie" — najczestsze u wszystkich trzech rol.
+  Szacunek: 10 000 wierszy x ~80 B + indeksy ~ 2,5 MB
+  '''
+}
+
+Table permission {
+  id            bigint          [pk, increment]
+  user_id       bigint          [not null, ref: > app_user.id]
+  warehouse_id  bigint          [null, ref: > warehouse.id]
+  section_id    bigint          [null, ref: > section.id]
+  permission    permission_type [not null]
+  granted_by_id bigint          [not null, ref: > app_user.id]
+  granted_at    timestamptz     [not null, default: `now()`]
+
+  indexes {
+    user_id [name: 'idx_permission_user']
+    (user_id, warehouse_id) [unique, name: 'uq_permission_user_warehouse']
+    (user_id, section_id)   [unique, name: 'uq_permission_user_section']
+  }
+
+  Note: '''
+  CHECK ck_permission_scope : num_nonnulls(warehouse_id, section_id) = 1
+      — zakres to DOKLADNIE jeden obiekt: magazyn albo sekcja
+  uq_permission_user_warehouse — czesciowy WHERE warehouse_id IS NOT NULL
+  uq_permission_user_section   — czesciowy WHERE section_id IS NOT NULL
+  FK user_id       ON DELETE CASCADE  (usuniecie konta kasuje uprawnienia)
+  FK granted_by_id ON DELETE RESTRICT (slad audytowy)
+  Szacunek: < 500 wierszy
+  '''
+}
+
+Table loan {
+  id           bigint      [pk, increment]
+  loaner_id   bigint      [not null, ref: > app_user.id]
+  borrower_id  bigint      [not null, ref: > app_user.id]
+  issued_at    timestamptz [not null, default: `now()`]
+  due_date     date        [not null]
+  settled_at   timestamptz [null]
+  status       loan_status [not null, default: 'open']
+  remarks      varchar(500) [null]
+
+  indexes {
+    (borrower_id, status) [name: 'idx_loan_borrower_status']
+    loaner_id [name: 'idx_loan_loaner']
+    due_date [name: 'idx_loan_overdue']
+    issued_at [name: 'idx_loan_issued_at']
+  }
+
+  Note: '''
+  CHECK ck_loan_actors    : borrower_id <> loaner_id
+  CHECK ck_loan_due       : due_date >= issued_at::date
+  CHECK ck_loan_settled_flag : (status = 'settled') = (settled_at IS NOT NULL)
+  CHECK ck_loan_settled_ts   : settled_at IS NULL OR settled_at >= issued_at
+  TRIGGER trg_loan_roles  : borrower_id ma role worker; loaner_id ma role
+                            warehouseman lub admin; obaj aktywni
+  TRIGGER trg_loan_status : status wyliczany z pozycji ZWROTNYCH
+      (open / partially_returned / settled); pozycje na materialy zuzywalne
+      sa rozliczone juz w chwili wydania
+  idx_loan_overdue — czesciowy WHERE status IN ('open','partially_returned')
+  Szacunek: 15/dzien x 250 dni roboczych x 5 lat = ~19 000 wierszy ~ 2 MB
+  '''
+}
+
+Table loan_line {
+  id            bigint          [pk, increment]
+  loan_id       bigint          [not null, ref: > loan.id]
+  item_id       bigint          [not null, ref: > item.id]
+  is_consumable boolean         [not null]
+  qty_issued    "numeric(12,3)" [not null]
+  qty_returned  "numeric(12,3)" [not null, default: 0]
+
+  indexes {
+    (loan_id, item_id) [unique, name: 'uq_loan_line_item', note: 'REGULA: jeden przedmiot moze wystapic na dokumencie tylko raz.']
+    item_id [name: 'idx_loan_line_item', note: 'Strona wskazujaca FK do item.']
+    (item_id, loan_id) [name: 'idx_loan_line_outstanding', note: 'Indeks czesciowy WHERE NOT is_consumable AND qty_returned < qty_issued — pozycje zwrotne jeszcze niezwrocone. Podstawa wyliczania dostepnosci w fn_item_on_loan i w wyzwalaczu trg_loan_line_availability.']
+  }
+
+  Note: '''
+  CHECK ck_loan_line_issued     : qty_issued > 0
+  CHECK ck_loan_line_returned   : qty_returned >= 0 AND qty_returned <= qty_issued
+  CHECK ck_loan_line_consumable : NOT is_consumable OR qty_returned = 0
+      — material zuzywalny nie wraca do magazynu
+  FK ZLOZONY fk_loan_line_item : (item_id, is_consumable) -> item(id, is_consumable)
+  TRIGGER trg_loan_line_availability : qty_issued <= dostepna ilosc przedmiotu;
+      pozycja na material zuzywalny jest niezmienna po utworzeniu
+  idx_loan_line_outstanding — czesciowy WHERE NOT is_consumable AND qty_returned < qty_issued
+  FK loan_id ON DELETE CASCADE
+  Szacunek: ~3 pozycje/wypozyczenie -> ~57 000 wierszy ~ 5 MB
+  '''
+}
+
+Table stock_movement {
+  id              bigint          [pk, increment]
+  item_id         bigint          [not null, ref: > item.id]
+  movement_type   movement_type   [not null]
+  qty_delta       "numeric(12,3)" [not null]
+  loan_line_id    bigint          [null, ref: > loan_line.id]
+  from_section_id bigint          [null, ref: > section.id]
+  to_section_id   bigint          [null, ref: > section.id]
+  performed_by_id bigint          [not null, ref: > app_user.id]
+  occurred_at     timestamptz     [not null, default: `now()`]
+  remarks         varchar(500)    [null]
+
+  indexes {
+    (item_id, occurred_at) [name: 'idx_movement_item_time']
+    occurred_at [name: 'idx_movement_time']
+    loan_line_id [name: 'idx_movement_loan_line']
+    performed_by_id [name: 'idx_movement_user']
+    (to_section_id, occurred_at) [name: 'idx_movement_to_section']
+  }
+
+  Note: '''
+  CHECK ck_movement_sign:
+      (movement_type = 'receipt'     AND qty_delta > 0)
+   OR (movement_type = 'disposal'    AND qty_delta < 0)
+   OR (movement_type = 'consumption' AND qty_delta < 0)
+   OR (movement_type = 'issue'       AND qty_delta < 0)
+   OR (movement_type = 'return'      AND qty_delta > 0)
+   OR (movement_type = 'adjustment') OR (movement_type = 'transfer')
+      — zero wyklucza dziedzina qty_delta
+  CHECK ck_movement_loan_link:
+      (movement_type IN ('issue','return','consumption')) = (loan_line_id IS NOT NULL)
+  CHECK ck_movement_sections:
+      (movement_type = 'transfer')
+          = (from_section_id IS NOT NULL AND to_section_id IS NOT NULL)
+  CHECK ck_movement_transfer_distinct:
+      from_section_id IS NULL OR from_section_id <> to_section_id
+  TRIGGER trg_movement_append_only : zakaz UPDATE i DELETE (dziennik audytowy)
+  TRIGGER trg_movement_apply:
+      receipt / disposal / adjustment / consumption -> zmiana item.quantity
+      transfer -> zmiana item.section_id (rzecz seryjna) albo przeniesienie
+                  ilosci miedzy dwoma wierszami item (material sypki)
+  Indeks idx_movement_item_time obsluguje raport historii przedmiotu (BRIN byloby
+  tansze, ale przy 120 tys. wierszy B-tree jest wystarczajacy).
+  Szacunek: ~120 000 wierszy / 5 lat ~ 12 MB
+  '''
+}

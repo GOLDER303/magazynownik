@@ -1,0 +1,189 @@
+// =====================================================================
+//  b. MODEL LOGICZNY  —  System zarzadzania magazynem
+//  Notacja: DBML (https://dbdiagram.io)
+// =====================================================================
+
+Project magazyn_logiczny {
+  database_type: 'Generic'
+  Note: 'Model logiczny bazy danych systemu zarzadzania magazynem przedsiebiorstwa budowlanego'
+}
+
+// ------------------------- SLOWNIKI (dziedziny) ----------------------
+
+Enum user_type {
+  admin          [note: 'Administrator - zarzadza kontami i uprawnieniami']
+  warehouseman   [note: 'Magazynier - operacje na stanie magazynowym']
+  worker         [note: 'Pracownik - podglad stanu, pobierajacy rzeczy z magazynu']
+}
+
+Enum section_type {
+  area   [note: 'Strefa - najwyzszy poziom hierarchii']
+  rack   [note: 'Regal']
+  shelf  [note: 'Polka - najnizszy poziom hierarchii']
+}
+
+Enum unit_type {
+  pcs [note: 'sztuka']
+  kg  [note: 'kilogram']
+  m   [note: 'metr']
+  l   [note: 'litr']
+}
+
+Enum permission_type {
+  full_access [note: 'Odczyt + modyfikacja + wydawanie/przyjmowanie']
+  edit        [note: 'Odczyt + modyfikacja stanu']
+  preview     [note: 'Tylko odczyt']
+  denied      [note: 'Jawna odmowa - nadpisuje uprawnienie odziedziczone z magazynu']
+}
+
+Enum movement_type {
+  receipt     [note: 'Przyjecie na stan']
+  issue       [note: 'Wydanie rzeczy zwrotnej - blokuje dostepnosc, nie zmienia stanu']
+  return      [note: 'Zwrot od pracownika']
+  consumption [note: 'Wydanie materialu zuzywalnego - schodzi ze stanu bezpowrotnie']
+  transfer    [note: 'Przesuniecie miedzy sekcjami (takze miedzy magazynami)']
+  disposal    [note: 'Likwidacja / zlomowanie']
+  adjustment  [note: 'Korekta inwentaryzacyjna']
+}
+
+Enum loan_status {
+  open               [note: 'Cos pozostaje do zwrotu']
+  partially_returned [note: 'Czesc pozycji zwrotnych wrocila']
+  settled            [note: 'Rozliczony - wszystko zwrocone albo zuzyte']
+  cancelled          [note: 'Anulowane przed wydaniem']
+}
+
+// ------------------------- ENCJE -------------------------------------
+
+Table app_user {
+  id            integer   [pk]
+  login         string    [not null, unique]
+  password_hash string    [not null, note: 'bcrypt']
+  first_name    string    [not null]
+  last_name     string    [not null]
+  contact_number string   [null]
+  address       string    [null]
+  user_type     user_type [not null]
+  is_active     boolean   [not null, default: true, note: 'false - uzytnownik usuniety']
+  created_at    timestamp [not null]
+}
+
+Table warehouse {
+  id      integer [pk]
+  name    string  [not null, unique]
+  address string  [not null]
+
+  Note: 'Magazyn - fizyczna lokalizacja skladowania'
+}
+
+Table section {
+  id                integer      [pk]
+  warehouse_id      integer      [not null, ref: > warehouse.id]
+  parent_section_id integer      [null, ref: > section.id, note: 'NULL = korzen hierarchii']
+  section_name      string       [not null]
+  section_type      section_type [not null]
+
+  Note: '''
+  Sekcja magazynu, hierarchia rekurencyjna: area > rack > shelf.
+  '''
+}
+
+Table item_type {
+  id            integer   [pk]
+  name          string    [not null, unique]
+  short_name    string    [not null, unique]
+  is_serialized boolean   [not null, default: false, note: 'true = kazda sztuka osobno (narzedzia i podajemy numer seryjny); false = partia (materialy)']
+  is_consumable boolean   [not null, default: false, note: 'true = material zuzywalny: wydany nie wraca']
+  unit          unit_type [not null, default: 'pcs']
+
+  Note: '''
+  Katalog asortymentu. Dwie niezalezne cechy:
+   - is_serialized rozstrzyga TRYB EWIDENCJI (sztuka(np. nr seryjny) vs partia)
+   - is_consumable rozstrzyga CYKL ZYCIA (do zwrotu vs do zuzycia)
+  Rzecz seryjna nie moze byc zuzywalna (narzedzie sie nie zuzywa).
+  '''
+}
+
+Table item {
+  id            integer [pk]
+  item_type_id  integer [not null, ref: > item_type.id]
+  section_id    integer [not null, ref: > section.id]
+  is_serialized boolean [not null, note: 'Denormalizacja kontrolowana - kopia z item_type, wymuszana zlozonym kluczem obcym; pozwala wyrazic ponizszy warunek deklaratywnie']
+  is_consumable boolean [not null, note: 'Kopia z item_type, wymuszana tym samym zlozonym kluczem obcym']
+  serial_number string  [null, note: 'Wymagany <=> is_serialized']
+  quantity      decimal [not null, default: 0, note: 'Ilosc POSIADANA (nie: dostepna). Dla is_serialized: 1 na stanie, 0 po likwidacji.']
+  created_at    timestamp [not null]
+
+  Note: '''
+  Zasob na stanie. Dwa warianty sterowane flaga is_serialized:
+   - true  -> 1 wiersz = 1 sztuka, serial_number NOT NULL, quantity = 1
+   - false -> 1 wiersz = partia danego typu w danej sekcji, serial_number NULL
+  Ilosc dostepna = quantity - SUM(otwarte pozycje wypozyczen).
+  '''
+}
+
+Table permission {
+  id           integer         [pk]
+  user_id      integer         [not null, ref: > app_user.id]
+  warehouse_id integer         [null, ref: > warehouse.id]
+  section_id   integer         [null, ref: > section.id]
+  permission   permission_type [not null]
+  granted_by_id integer        [not null, ref: > app_user.id]
+  granted_at   timestamp       [not null]
+
+  Note: '''
+  Uprawnienie uzytkownika do zakresu. Zakres to DOKLADNIE JEDEN z:
+  warehouse_id albo section_id.
+  Uprawnienie do sekcji ma pierwszenstwo nad uprawnieniem do magazynu.
+  '''
+}
+
+Table loan {
+  id           integer     [pk]
+  loaner_id   integer     [not null, ref: > app_user.id]
+  borrower_id  integer     [not null, ref: > app_user.id]
+  issued_at    timestamp   [not null]
+  due_date     date        [not null, note: 'Termin zwrotu']
+  settled_at   timestamp   [null, note: 'Wypelniane gdy status = settled']
+  status       loan_status [not null, default: 'open']
+  remarks      string      [null]
+
+  Note: 'Naglowek dokumentu wydania. Jedno zdarzenie = kilka pozycji.'
+}
+
+Table loan_line {
+  id            integer [pk]
+  loan_id       integer [not null, ref: > loan.id]
+  item_id       integer [not null, ref: > item.id]
+  is_consumable boolean [not null, note: 'Kopia z item, wymuszana zlozonym kluczem obcym']
+  qty_issued    decimal [not null]
+  qty_returned  decimal [not null, default: 0]
+
+  Note: '''
+  Pozycja dokumentu. Zwroty czesciowe dozwolone: qty_returned <= qty_issued.
+  Pozycja na material zuzywalny ma qty_returned zawsze 0 i nie wstrzymuje
+  rozliczenia dokumentu.
+  '''
+}
+
+Table stock_movement {
+  id              integer       [pk]
+  item_id         integer       [not null, ref: > item.id]
+  movement_type   movement_type [not null]
+  qty_delta       decimal       [not null, note: 'Znak zgodny z movement_type']
+  loan_line_id    integer       [null, ref: > loan_line.id, note: 'NOT NULL <=> movement_type IN (issue, return, consumption)']
+  from_section_id integer       [null, ref: > section.id, note: 'NOT NULL <=> movement_type = transfer']
+  to_section_id   integer       [null, ref: > section.id, note: 'NOT NULL <=> movement_type = transfer']
+  performed_by_id integer       [not null, ref: > app_user.id]
+  occurred_at     timestamp     [not null]
+  remarks         string        [null]
+
+  Note: '''
+  Dziennik audytowy. Rekord nieusuwalny i niemodyfikowalny (append-only).
+  Wplyw na item:
+   - receipt / disposal / adjustment / consumption -> zmieniaja item.quantity
+   - transfer -> zmienia item.section_id (rzecz seryjna)
+                 albo przenosi ilosc miedzy dwoma wierszami item (material sypki)
+   - issue / return -> nie zmieniaja wlasnosci, zmieniaja tylko dostepnosc
+  '''
+}
