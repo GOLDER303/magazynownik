@@ -23,12 +23,6 @@ erDiagram
     UZYTKOWNIK            ||--o{ WYPOZYCZENIE         : "wydaje (magazynier)"
     WYPOZYCZENIE          ||--|{ POZYCJA_WYPOZYCZENIA : "zawiera"
     PRZEDMIOT             ||--o{ POZYCJA_WYPOZYCZENIA : "jest przedmiotem"
-
-    PRZEDMIOT             ||--o{ RUCH_MAGAZYNOWY      : "dotyczy"
-    UZYTKOWNIK            ||--o{ RUCH_MAGAZYNOWY      : "rejestruje"
-    POZYCJA_WYPOZYCZENIA  ||--o{ RUCH_MAGAZYNOWY      : "generuje"
-    SEKCJA                ||--o{ RUCH_MAGAZYNOWY      : "jest zrodlem przesuniecia"
-    SEKCJA                ||--o{ RUCH_MAGAZYNOWY      : "jest celem przesuniecia"
 ```
 
 ## Encje
