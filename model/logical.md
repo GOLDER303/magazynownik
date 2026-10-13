@@ -65,17 +65,8 @@ Table app_user {
   created_at    timestamp [not null]
 }
 
-Table warehouse {
-  id      integer [pk]
-  name    string  [not null, unique]
-  address string  [not null]
-
-  Note: 'Magazyn - fizyczna lokalizacja skladowania'
-}
-
 Table section {
   id                integer      [pk]
-  warehouse_id      integer      [not null, ref: > warehouse.id]
   parent_section_id integer      [null, ref: > section.id, note: 'NULL = korzen hierarchii']
   section_name      string       [not null]
   section_type      section_type [not null]
@@ -105,17 +96,13 @@ Table item {
 Table permission {
   id           integer         [pk]
   user_id      integer         [not null, ref: > app_user.id]
-  warehouse_id integer         [null, ref: > warehouse.id]
   section_id   integer         [null, ref: > section.id]
   permission   permission_type [not null]
   granted_by_id integer        [not null, ref: > app_user.id]
   granted_at   timestamp       [not null]
 
   Note: '''
-  Uprawnienie uzytkownika do zakresu. Zakres to DOKLADNIE JEDEN z:
-  warehouse_id albo section_id.
-  Uprawnienie do sekcji ma pierwszenstwo nad uprawnieniem do magazynu.
-  '''
+  Uprawnienie uzytkownika do zakresu.'''
 }
 
 Table loan {
