@@ -1,7 +1,5 @@
 ```mermaid
 erDiagram
-    UZYTKOWNIK            ||--o{ UPRAWNIENIE          : "posiada"
-    SEKCJA                ||--o{ UPRAWNIENIE          : "jest zakresem"
     SEKCJA                ||--o{ SEKCJA               : "zawiera (hierarchia)"
 
     TYP_PRZEDMIOTU        ||--o{ PRZEDMIOT            : "klasyfikuje"
