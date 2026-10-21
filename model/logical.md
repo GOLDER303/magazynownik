@@ -29,14 +29,6 @@ Enum unit_type {
   l   [note: 'litr']
 }
 
-Enum permission_type {
-  full_access [note: 'Odczyt + modyfikacja + wydawanie/przyjmowanie']
-  edit        [note: 'Odczyt + modyfikacja stanu']
-  preview     [note: 'Tylko odczyt']
-  denied      [note: 'Jawna odmowa - nadpisuje uprawnienie odziedziczone z magazynu']
-}
-
-
 Enum loan_status {
   open               [note: 'Cos pozostaje do zwrotu']
   partially_returned [note: 'Czesc pozycji zwrotnych wrocila']
@@ -91,18 +83,6 @@ Table item {
   serial_number string  [null, note: 'Wymagany <=> is_serialized']
   quantity      decimal [not null, default: 0, note: 'Ilosc POSIADANA (nie: dostepna). Dla is_serialized: 1 na stanie, 0 po likwidacji.']
   created_at    timestamp [not null]
-}
-
-Table permission {
-  id           integer         [pk]
-  user_id      integer         [not null, ref: > app_user.id]
-  section_id   integer         [null, ref: > section.id]
-  permission   permission_type [not null]
-  granted_by_id integer        [not null, ref: > app_user.id]
-  granted_at   timestamp       [not null]
-
-  Note: '''
-  Uprawnienie uzytkownika do zakresu.'''
 }
 
 Table loan {
