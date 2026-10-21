@@ -1,0 +1,184 @@
+// =====================================================================
+//  MODEL FIZYCZNY (PostgreSQL) - System zarzadzania magazynem
+//  Notacja: DBML (https://dbdiagram.io)
+//  Wklej calosc do edytora dbdiagram.io
+// =====================================================================
+
+Project magazyn_fizyczny {
+  database_type: 'PostgreSQL'
+  Note: '''
+  Model fizyczny bazy danych systemu zarzadzania magazynem (schemat: magazyn).
+  Reguly miedzytabelowe realizowane triggerami - patrz notatki przy tabelach.
+  '''
+}
+
+// ------------------------- TYPY WYLICZENIOWE -------------------------
+// Enum "item_type" z modelu logicznego przemianowany na item_kind
+// (kolizja nazwy z tabela item_type w PostgreSQL).
+
+Enum user_type {
+  admin          [note: 'Administrator - zarzadza kontami i uprawnieniami']
+  warehouseman   [note: 'Magazynier - operacje na stanie magazynowym']
+  worker         [note: 'Pracownik - podglad stanu, pobierajacy rzeczy z magazynu']
+}
+
+Enum section_type {
+  area   [note: 'Strefa - najwyzszy poziom hierarchii']
+  rack   [note: 'Regal']
+  shelf  [note: 'Polka - najnizszy poziom hierarchii']
+}
+
+Enum unit_type {
+  pcs [note: 'sztuka']
+  kg  [note: 'kilogram']
+  m   [note: 'metr']
+  l   [note: 'litr']
+}
+
+Enum loan_status {
+  open               [note: 'Cos pozostaje do zwrotu']
+  partially_returned [note: 'Czesc pozycji zwrotnych wrocila']
+  settled            [note: 'Rozliczony - wszystko zwrocone albo zuzyte']
+  cancelled          [note: 'Anulowane przed wydaniem']
+}
+
+Enum item_kind {
+  serializable [note: 'Ma numer seryjny']
+  returnable   [note: 'Nie ma numeru seryjnego, ale jest zwrotny']
+  consumable   [note: 'Zuzywa sie']
+}
+
+// ------------------------- TABELE ------------------------------------
+
+Table app_user {
+  id              integer      [pk, increment, note: 'GENERATED ALWAYS AS IDENTITY']
+  login           varchar(64)  [not null, unique]
+  password_hash   varchar(100) [not null, note: 'bcrypt']
+  first_name      varchar(100) [not null]
+  last_name       varchar(100) [not null]
+  contact_number  varchar(32)  [null]
+  address         varchar(255) [null]
+  user_type       user_type    [not null]
+  is_active       boolean      [not null, default: true, note: 'false - uzytkownik usuniety (soft delete)']
+  created_at      timestamptz  [not null, default: `now()`]
+
+  checks {
+    `btrim(login) <> ''` [name: 'ck_app_user_login_not_blank']
+  }
+
+  Note: 'Konta uzytkownikow systemu'
+}
+
+Table section {
+  id                 integer      [pk, increment]
+  parent_section_id  integer      [null, ref: > section.id, note: 'NULL = korzen hierarchii; ON DELETE RESTRICT']
+  section_name       varchar(100) [not null]
+  section_type       section_type [not null]
+
+  indexes {
+    parent_section_id [name: 'ix_section_parent']
+    (parent_section_id, section_name) [unique, name: 'uq_section_name_in_parent', note: 'UNIQUE NULLS NOT DISTINCT (PG15+)']
+  }
+
+  checks {
+    `parent_section_id IS NULL OR parent_section_id <> id` [name: 'ck_section_not_own_parent']
+    `(parent_section_id IS NULL) = (section_type = 'area')` [name: 'ck_section_root_is_area']
+  }
+
+  Note: '''
+  Sekcja magazynu, hierarchia rekurencyjna: area > rack > shelf.
+  Trigger trg_section_hierarchy: rack musi miec rodzica area, shelf - rack.
+  '''
+}
+
+Table item_type {
+  id          integer      [pk, increment]
+  name        varchar(200) [not null, unique]
+  short_name  varchar(50)  [not null, unique]
+  item_kind   item_kind    [not null]
+  unit        unit_type    [not null, default: 'pcs']
+
+  checks {
+    `item_kind <> 'serializable' OR unit = 'pcs'` [name: 'ck_item_type_serial_unit']
+  }
+
+  Note: 'Slownik rodzajow przedmiotow (typ towaru)'
+}
+
+Table item {
+  id             integer       [pk, increment]
+  item_type_id   integer       [not null, ref: > item_type.id, note: 'ON DELETE RESTRICT']
+  section_id     integer       [not null, ref: > section.id, note: 'ON DELETE RESTRICT']
+  serial_number  varchar(100)  [null, note: 'Wymagany <=> item_type.item_kind = serializable']
+  quantity       numeric(12,3) [not null, default: 0, note: 'Ilosc POSIADANA (nie: dostepna). Dla serializable: 1 na stanie, 0 po likwidacji.']
+  created_at     timestamptz   [not null, default: `now()`]
+
+  indexes {
+    item_type_id [name: 'ix_item_item_type']
+    section_id   [name: 'ix_item_section']
+    (item_type_id, serial_number) [unique, name: 'uq_item_type_serial', note: 'Indeks czesciowy: WHERE serial_number IS NOT NULL']
+  }
+
+  checks {
+    `quantity >= 0` [name: 'ck_item_quantity_nonneg']
+    `serial_number IS NULL OR btrim(serial_number) <> ''` [name: 'ck_item_serial_not_blank']
+  }
+
+  Note: '''
+  Trigger trg_item_consistency:
+  - serializable: serial_number wymagany, quantity IN (0, 1)
+  - pozostale typy: serial_number musi byc NULL
+  '''
+}
+
+Table loan {
+  id           integer     [pk, increment]
+  loaner_id    integer     [not null, ref: > app_user.id, note: 'Osoba wydajaca (magazynier); ON DELETE RESTRICT']
+  borrower_id  integer     [not null, ref: > app_user.id, note: 'Osoba pobierajaca; ON DELETE RESTRICT']
+  issued_at    timestamptz [not null, default: `now()`]
+  due_date     date        [not null, note: 'Termin zwrotu']
+  settled_at   timestamptz [null, note: 'Wypelniane gdy status = settled']
+  status       loan_status [not null, default: 'open']
+  remarks      text        [null]
+
+  indexes {
+    loaner_id   [name: 'ix_loan_loaner']
+    borrower_id [name: 'ix_loan_borrower']
+    due_date    [name: 'ix_loan_open', note: 'Indeks czesciowy: WHERE status IN (open, partially_returned)']
+  }
+
+  checks {
+    `due_date >= issued_at::date`                [name: 'ck_loan_due_after_issue']
+    `(status = 'settled') = (settled_at IS NOT NULL)` [name: 'ck_loan_settled_at']
+    `settled_at IS NULL OR settled_at >= issued_at`   [name: 'ck_loan_settled_after_issue']
+  }
+
+  Note: '''
+  Naglowek dokumentu wydania. Jedno zdarzenie = kilka pozycji.
+  Trigger trg_loan_roles: wydajacy musi byc admin/warehouseman i aktywny.
+  '''
+}
+
+Table loan_line {
+  id            integer       [pk, increment]
+  loan_id       integer       [not null, ref: > loan.id, note: 'ON DELETE CASCADE']
+  item_id       integer       [not null, ref: > item.id, note: 'ON DELETE RESTRICT']
+  qty_issued    numeric(12,3) [not null]
+  qty_returned  numeric(12,3) [not null, default: 0]
+
+  indexes {
+    (loan_id, item_id) [unique, name: 'uq_loan_line_item']
+    item_id            [name: 'ix_loan_line_item']
+  }
+
+  checks {
+    `qty_issued > 0`                                  [name: 'ck_loan_line_issued']
+    `qty_returned >= 0 AND qty_returned <= qty_issued` [name: 'ck_loan_line_returned']
+  }
+
+  Note: '''
+  Pozycja dokumentu. Zwroty czesciowe dozwolone: qty_returned <= qty_issued.
+  Trigger trg_loan_line_consumable: consumable -> qty_returned = 0;
+  serializable -> qty_issued = 1.
+  '''
+}
