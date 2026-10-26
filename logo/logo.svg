@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="Logo systemu magazynowego">
+  <title>Magazyn — system magazynowy dla firmy remontowej</title>
+    <polygon points="64,20 108,45 64,70 20,45"   fill="#FF9A4D"/>
+    <polygon points="20,45 64,70 64,108 20,83"   fill="#F2690D"/>
+    <polygon points="108,45 64,70 64,108 108,83" fill="#1C2430"/>
+  <g transform="translate(86 76.5) matrix(0.4345 -0.247 0 0.5 0 0) rotate(90) translate(-3.75 0)"
+     fill="none" stroke="#FFB375">
+    <path d="M 8.36 -31 A 13 13 0 1 1 -8.36 -31" stroke-width="10"/>
+    <path d="M 0 -14 L 0 31" stroke-width="11" stroke-linecap="round"/>
+  </g>
+</svg>
