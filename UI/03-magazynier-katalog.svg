@@ -1,0 +1,367 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+<g id="03-magazynier-katalog">
+<rect x="0" y="0" width="1440" height="900" fill="#f4f6f8"/>
+<rect x="0" y="0" width="248" height="900" fill="#161d27"/>
+<rect x="0" y="68.23" width="248" height="1" fill="#ffffff" fill-opacity="0.07"/>
+<path d="M31 24.3 L41.31 30.16 L31 36.02 L20.69 30.16 Z" fill="#ff9a4d"/>
+<path d="M20.69 30.16 L31 36.02 L31 44.92 L20.69 39.06 Z" fill="#f2690d"/>
+<path d="M41.31 30.16 L31 36.02 L31 44.92 L41.31 39.06 Z" fill="#1c2430"/>
+<path d="M39.31 36.28 L39.06 36.7 L38.75 37.06 L38.41 37.34 L38.07 37.51 L37.73 37.58 L37.44 37.53 L37.21 37.37 L37.05 37.1 L36.98 36.75 L37 36.34 L37.1 35.9 L37.29 35.46 L37.55 35.05 L37.86 34.69 L38.2 34.42 L38.55 34.24 L38.87 34.18 L39.16 34.24 L39.31 34.33" fill="none" stroke="#ffb375" stroke-width="1.17" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M37.58 36.29 L37.23 36.49 L36.89 36.68 L36.54 36.88 L36.19 37.08 L35.84 37.28 L35.5 37.47 L35.15 37.67 L34.8 37.87 L34.45 38.07 L34.11 38.27 L33.76 38.46 L33.41 38.66 L33.06 38.86 L33 38.89" fill="none" stroke="#ffb375" stroke-width="1.29" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="56" y="31.77" font-family="Inter" font-size="14.5" font-weight="600" fill="#ffffff" letter-spacing="0.1">Magazynownik</text>
+<text x="56" y="49.33" font-family="Inter" font-size="10.5" font-weight="400" fill="#6d7a89">Panel magazyniera</text>
+<path d="M22.97 91.89 L23.37 91.89 L23.77 91.89 L24.17 91.89 L24.58 91.89 L24.97 91.89 L25.38 91.9 L25.79 92.1 L26.06 92.47 L26.13 92.88 L26.13 93.28 L26.13 93.68 L26.13 94.08 L26.13 94.48 L26.13 94.88 L26.09 95.29 L25.86 95.68 L25.48 95.92 L25.06 95.97 L24.66 95.97 L24.26 95.97 L23.86 95.97 L23.46 95.97 L23.06 95.97 L22.65 95.91 L22.27 95.65 L22.07 95.25 L22.04 94.85 L22.04 94.45 L22.04 94.05 L22.04 93.65 L22.04 93.25 L22.04 92.85 L22.13 92.43 L22.42 92.07 L22.82 91.9 L22.97 91.89 Z" fill="none" stroke="#8c99a8" stroke-width="1.11" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M28.81 91.89 L29.21 91.89 L29.61 91.89 L30.01 91.89 L30.41 91.89 L30.81 91.89 L31.21 91.9 L31.62 92.1 L31.89 92.47 L31.96 92.88 L31.96 93.28 L31.96 93.68 L31.96 94.08 L31.96 94.48 L31.96 94.88 L31.92 95.29 L31.7 95.68 L31.31 95.92 L30.9 95.97 L30.5 95.97 L30.1 95.97 L29.7 95.97 L29.3 95.97 L28.9 95.97 L28.49 95.91 L28.11 95.65 L27.9 95.25 L27.88 94.85 L27.88 94.45 L27.88 94.05 L27.88 93.65 L27.88 93.25 L27.88 92.85 L27.96 92.43 L28.25 92.07 L28.66 91.9 L28.81 91.89 Z" fill="none" stroke="#8c99a8" stroke-width="1.11" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22.97 97.72 L23.37 97.72 L23.77 97.72 L24.17 97.72 L24.58 97.72 L24.97 97.72 L25.38 97.74 L25.79 97.93 L26.06 98.3 L26.13 98.72 L26.13 99.12 L26.13 99.52 L26.13 99.92 L26.13 100.32 L26.13 100.72 L26.09 101.12 L25.86 101.52 L25.48 101.76 L25.06 101.8 L24.66 101.8 L24.26 101.8 L23.86 101.8 L23.46 101.8 L23.06 101.8 L22.65 101.74 L22.27 101.49 L22.07 101.09 L22.04 100.68 L22.04 100.28 L22.04 99.88 L22.04 99.48 L22.04 99.08 L22.04 98.68 L22.13 98.26 L22.42 97.91 L22.82 97.73 L22.97 97.72 Z" fill="none" stroke="#8c99a8" stroke-width="1.11" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M28.81 97.72 L29.21 97.72 L29.61 97.72 L30.01 97.72 L30.41 97.72 L30.81 97.72 L31.21 97.74 L31.62 97.93 L31.89 98.3 L31.96 98.72 L31.96 99.12 L31.96 99.52 L31.96 99.92 L31.96 100.32 L31.96 100.72 L31.92 101.12 L31.7 101.52 L31.31 101.76 L30.9 101.8 L30.5 101.8 L30.1 101.8 L29.7 101.8 L29.3 101.8 L28.9 101.8 L28.49 101.74 L28.11 101.49 L27.9 101.09 L27.88 100.68 L27.88 100.28 L27.88 99.88 L27.88 99.48 L27.88 99.08 L27.88 98.68 L27.96 98.26 L28.25 97.91 L28.66 97.73 L28.81 97.72 Z" fill="none" stroke="#8c99a8" stroke-width="1.11" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="43" y="100.55" font-family="Inter" font-size="10.5" font-weight="600" fill="#7a8796" letter-spacing="1.16">PULPIT</text>
+<rect x="29" y="111.45" width="1" height="61.25" fill="#ffffff" fill-opacity="0.08"/>
+<text x="52" y="130.5" font-family="Inter" font-size="12.5" font-weight="400" fill="#9faab8">Przegląd dnia</text>
+<text x="52" y="161.63" font-family="Inter" font-size="12.5" font-weight="400" fill="#9faab8">Alerty stanów</text>
+<rect x="209.63" y="149.39" width="18.38" height="16.5" rx="8.25" fill="#ffffff" fill-opacity="0.1"/>
+<text x="215.63" y="161.02" font-family="Inter" font-size="10" font-weight="600" fill="#c3ccd6">3</text>
+<path d="M27 193.3 L31.67 195.69 L31.67 200.94 L27 203.33 L22.33 200.94 L22.33 195.69 Z" fill="none" stroke="#8c99a8" stroke-width="1.11" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22.33 195.69 L27 198.08 L31.67 195.69" fill="none" stroke="#8c99a8" stroke-width="1.11" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M27 198.08 L27 203.33" fill="none" stroke="#8c99a8" stroke-width="1.11" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="43" y="202.02" font-family="Inter" font-size="10.5" font-weight="600" fill="#7a8796" letter-spacing="1.16">MAGAZYN</text>
+<rect x="29" y="212.92" width="1" height="123.5" fill="#ffffff" fill-opacity="0.08"/>
+<rect x="42" y="212.92" width="196" height="30.13" rx="7" fill="#f2690d" fill-opacity="0.15"/>
+<text x="52" y="231.97" font-family="Inter" font-size="12.5" font-weight="600" fill="#ffb375">Katalog przedmiotów</text>
+<text x="52" y="263.09" font-family="Inter" font-size="12.5" font-weight="400" fill="#9faab8">Dodaj przedmiot</text>
+<text x="52" y="294.22" font-family="Inter" font-size="12.5" font-weight="400" fill="#9faab8">Modele i kategorie</text>
+<text x="52" y="325.34" font-family="Inter" font-size="12.5" font-weight="400" fill="#9faab8">Lokalizacje (sekcje)</text>
+<path d="M22.33 359.99 L29.92 359.99" fill="none" stroke="#8c99a8" stroke-width="1.11" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M27.88 357.95 L29.92 359.99 L27.88 362.03" fill="none" stroke="#8c99a8" stroke-width="1.11" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M31.67 364.07 L24.08 364.07" fill="none" stroke="#8c99a8" stroke-width="1.11" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M26.13 362.03 L24.08 364.07 L26.13 366.11" fill="none" stroke="#8c99a8" stroke-width="1.11" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="43" y="365.74" font-family="Inter" font-size="10.5" font-weight="600" fill="#7a8796" letter-spacing="1.16">WYPOŻYCZENIA</text>
+<rect x="29" y="376.64" width="1" height="123.5" fill="#ffffff" fill-opacity="0.08"/>
+<text x="52" y="395.69" font-family="Inter" font-size="12.5" font-weight="400" fill="#9faab8">Nowe wypożyczenie</text>
+<text x="52" y="426.81" font-family="Inter" font-size="12.5" font-weight="400" fill="#9faab8">Aktywne wypożyczenia</text>
+<rect x="205.09" y="414.58" width="22.91" height="16.5" rx="8.25" fill="#ffffff" fill-opacity="0.1"/>
+<text x="211.09" y="426.21" font-family="Inter" font-size="10" font-weight="600" fill="#c3ccd6">14</text>
+<text x="52" y="457.94" font-family="Inter" font-size="12.5" font-weight="400" fill="#9faab8">Rejestracja zwrotu</text>
+<text x="52" y="489.06" font-family="Inter" font-size="12.5" font-weight="400" fill="#9faab8">Przeterminowane</text>
+<rect x="209.77" y="476.83" width="18.23" height="16.5" rx="8.25" fill="#ffffff" fill-opacity="0.1"/>
+<text x="215.77" y="488.46" font-family="Inter" font-size="10" font-weight="600" fill="#c3ccd6">2</text>
+<path d="M31.96 525.75 L31.94 526.13 L31.9 526.52 L31.82 526.92 L31.7 527.32 L31.56 527.7 L31.39 528.06 L31.18 528.41 L30.95 528.74 L30.69 529.06 L30.41 529.35 L30.1 529.62 L29.78 529.86 L29.43 530.07 L29.08 530.25 L28.71 530.41 L28.31 530.53 L27.91 530.62 L27.52 530.68 L27.13 530.71 L26.75 530.7 L26.36 530.67 L25.97 530.6 L25.57 530.5 L25.17 530.36 L24.81 530.2 L24.46 530.01 L24.12 529.79 L23.8 529.54 L23.5 529.26 L23.22 528.96 L22.97 528.64 L22.75 528.3 L22.56 527.95 L22.4 527.59 L22.26 527.2 L22.15 526.8 L22.08 526.4 L22.05 526.01 L22.04 525.63 L22.07 525.25 L22.12 524.85 L22.21 524.46 L22.34 524.06 L22.49 523.68 L22.67 523.33 L22.88 522.99 L23.12 522.66 L23.39 522.35 L23.68 522.07 L24 521.81 L24.33 521.57 L24.67 521.37 L25.03 521.2 L25.42 521.05 L25.81 520.94 L26.21 520.85 L26.6 520.81 L26.99 520.79 L27.37 520.81 L27.76 520.85 L28.16 520.93 L28.55 521.04 L28.94 521.19 L29.3 521.36 L29.65 521.56 L29.98 521.79 L30.3 522.04 L30.59 522.33 L30.86 522.64 L31.1 522.96 L31.31 523.3 L31.5 523.66 L31.65 524.03 L31.78 524.43 L31.87 524.82 L31.93 525.22 L31.96 525.6 L31.96 525.75 Z" fill="none" stroke="#8c99a8" stroke-width="1.11" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M27 522.95 L27 525.75 L28.87 526.92" fill="none" stroke="#8c99a8" stroke-width="1.11" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="43" y="529.46" font-family="Inter" font-size="10.5" font-weight="600" fill="#7a8796" letter-spacing="1.16">HISTORIA</text>
+<rect x="29" y="540.36" width="1" height="61.25" fill="#ffffff" fill-opacity="0.08"/>
+<text x="52" y="559.41" font-family="Inter" font-size="12.5" font-weight="400" fill="#9faab8">Operacje magazynowe</text>
+<text x="52" y="590.53" font-family="Inter" font-size="12.5" font-weight="400" fill="#9faab8">Historia pracownika</text>
+<rect x="0" y="842.22" width="248" height="1" fill="#ffffff" fill-opacity="0.07"/>
+<rect x="14" y="858.61" width="26" height="26" rx="13" fill="#f2690d" fill-opacity="0.22"/>
+<text x="19.08" y="875.32" font-family="Inter" font-size="10.5" font-weight="700" fill="#ffb375">AN</text>
+<text x="49" y="867.08" font-family="Inter" font-size="12" font-weight="600" fill="#e6ebf0">Anna Nowak</text>
+<text x="49" y="884.93" font-family="Inter" font-size="10.5" font-weight="400" fill="#6d7a89">Magazynier</text>
+<path d="M224.67 876.94 L222 876.94 A1.33 1.33 0 0 1 220.67 875.61 L220.67 867.61 A1.33 1.33 0 0 1 222 866.28 L224.67 866.28" fill="none" stroke="#9faab8" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M228.33 869.08 L230.87 871.61 L228.33 874.14" fill="none" stroke="#9faab8" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M230.87 871.61 L224.33 871.61" fill="none" stroke="#9faab8" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="248" y="0" width="1192" height="58" fill="#ffffff"/>
+<rect x="248" y="57" width="1192" height="1" fill="#e3e7ec"/>
+<text x="270" y="32.66" font-family="Inter" font-size="12" font-weight="400" fill="#6b7684">Magazyn</text>
+<text x="325.52" y="32.66" font-family="Inter" font-size="12" font-weight="600" fill="#1c2430">›</text>
+<text x="333.89" y="32.66" font-family="Inter" font-size="12" font-weight="600" fill="#1c2430">Katalog przedmiotów</text>
+<rect x="929.59" y="11.5" width="296" height="34" rx="8" fill="#fafbfc" stroke="#dde2e8" stroke-width="1"/>
+<path d="M952.33 27.83 L952.31 28.22 L952.26 28.61 L952.17 29.01 L952.04 29.4 L951.88 29.77 L951.69 30.12 L951.46 30.46 L951.2 30.77 L950.92 31.06 L950.6 31.33 L950.27 31.56 L949.92 31.75 L949.56 31.92 L949.17 32.05 L948.77 32.15 L948.38 32.21 L947.99 32.23 L947.61 32.22 L947.22 32.18 L946.82 32.09 L946.42 31.97 L946.05 31.81 L945.7 31.63 L945.36 31.41 L945.04 31.15 L944.74 30.87 L944.48 30.56 L944.24 30.23 L944.04 29.89 L943.87 29.53 L943.73 29.14 L943.62 28.74 L943.56 28.35 L943.53 27.96 L943.53 27.58 L943.57 27.19 L943.65 26.79 L943.77 26.39 L943.92 26.02 L944.1 25.66 L944.31 25.32 L944.56 25 L944.84 24.7 L945.14 24.43 L945.47 24.18 L945.81 23.97 L946.17 23.8 L946.55 23.65 L946.95 23.54 L947.35 23.47 L947.74 23.44 L948.12 23.44 L948.51 23.47 L948.9 23.54 L949.3 23.65 L949.68 23.8 L950.04 23.97 L950.38 24.18 L950.71 24.42 L951.01 24.7 L951.29 25 L951.54 25.32 L951.75 25.66 L951.93 26.02 L952.08 26.39 L952.2 26.79 L952.28 27.19 L952.32 27.58 L952.33 27.83 Z" fill="none" stroke="#9aa5b1" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M951.26 31.17 L954.06 33.97" fill="none" stroke="#9aa5b1" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="964.59" y="32.49" font-family="Inter" font-size="12.5" font-weight="400" fill="#9aa5b1">Szukaj przedmiotu lub pracownika…</text>
+<rect x="1239.59" y="11.5" width="34" height="34" rx="8" fill="#ffffff" stroke="#dde2e8" stroke-width="1"/>
+<path d="M1260.59 26.5 A4 4 0 1 0 1252.59 26.5 C1252.59 29.83 1251.26 30.77 1251.26 30.77 L1261.93 30.77 L1260.59 26.5 Z" fill="none" stroke="#5b6775" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1257.73 33.37 A1.33 1.33 0 0 1 1255.46 33.37" fill="none" stroke="#5b6775" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1258.59" y="19.5" width="6" height="6" rx="3" fill="#f2690d"/>
+<rect x="1287.59" y="9.28" width="1" height="38.42" fill="#e3e7ec"/>
+<rect x="1300.59" y="12.48" width="32" height="32" rx="16" fill="#fff2e8"/>
+<text x="1307.91" y="32.32" font-family="Inter" font-size="11.5" font-weight="700" fill="#c2520a">AN</text>
+<text x="1341.59" y="22.33" font-family="Inter" font-size="12.5" font-weight="600" fill="#1c2430">Anna Nowak</text>
+<text x="1341.59" y="42.72" font-family="Inter" font-size="10.5" font-weight="400" fill="#6b7684">Magazynier</text>
+<text x="270" y="99.27" font-family="Inter" font-size="20" font-weight="600" fill="#1c2430" letter-spacing="-0.2">Katalog przedmiotów</text>
+<text x="270" y="123.05" font-family="Inter" font-size="12.5" font-weight="400" fill="#6b7684">Stan magazynowy wyliczany z widoku</text>
+<text x="500.69" y="122.97" font-family="Roboto Mono" font-size="11.5" font-weight="400" fill="#56616e">v_available_stock</text>
+<rect x="1091.92" y="86.06" width="164.69" height="34" rx="8" fill="#ffffff" stroke="#dde2e8" stroke-width="1"/>
+<path d="M1109.46 102.6 L1109.46 98 L1114.06 98 L1120.39 104.33 L1115.79 108.93 Z" fill="none" stroke="#39424e" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1112.86 100.53 L1112.75 100.94 L1112.43 101.28 L1112.01 101.4 L1111.6 101.3 L1111.26 101 L1111.12 100.58 L1111.2 100.17 L1111.5 99.81 L1111.91 99.67 L1112.32 99.73 L1112.69 100.01 L1112.85 100.42 L1112.86 100.53 Z" fill="none" stroke="#39424e" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1129.92" y="107.05" font-family="Inter" font-size="12.5" font-weight="600" fill="#39424e">Modele i kategorie</text>
+<rect x="1265.61" y="86.06" width="152.39" height="34" rx="8" fill="#f2690d" stroke="#f2690d" stroke-width="1"/>
+<path d="M1288.61 98.73 L1288.61 107.4" fill="none" stroke="#ffffff" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1284.28 103.06 L1292.94 103.06" fill="none" stroke="#ffffff" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1303.61" y="107.05" font-family="Inter" font-size="12.5" font-weight="600" fill="#ffffff">Dodaj przedmiot</text>
+<rect x="270" y="144.13" width="278" height="100.95" rx="11" fill="#ffffff" stroke="#e3e7ec" stroke-width="1"/>
+<text x="286" y="170.31" font-family="Inter" font-size="11.5" font-weight="400" fill="#6b7684">Pozycje w ewidencji</text>
+<text x="286" y="204.15" font-family="Inter" font-size="23" font-weight="600" fill="#1c2430" letter-spacing="-0.5">1 024</text>
+<text x="286" y="226.14" font-family="Inter" font-size="11" font-weight="400" fill="#8a94a0">narzędzia i materiały</text>
+<rect x="560" y="144.13" width="278" height="100.95" rx="11" fill="#ffffff" stroke="#e3e7ec" stroke-width="1"/>
+<text x="576" y="170.31" font-family="Inter" font-size="11.5" font-weight="400" fill="#6b7684">Dostępne teraz</text>
+<text x="576" y="204.15" font-family="Inter" font-size="23" font-weight="600" fill="#1c2430" letter-spacing="-0.5">958</text>
+<text x="576" y="226.14" font-family="Inter" font-size="11" font-weight="400" fill="#8a94a0">v_available_stock</text>
+<rect x="850" y="144.13" width="278" height="100.95" rx="11" fill="#ffffff" stroke="#e3e7ec" stroke-width="1"/>
+<text x="866" y="170.31" font-family="Inter" font-size="11.5" font-weight="400" fill="#6b7684">Wypożyczone</text>
+<text x="866" y="204.15" font-family="Inter" font-size="23" font-weight="600" fill="#1c2430" letter-spacing="-0.5">52</text>
+<text x="866" y="226.14" font-family="Inter" font-size="11" font-weight="400" fill="#8a94a0">14 otwartych dokumentów</text>
+<rect x="1140" y="144.13" width="278" height="100.95" rx="11" fill="#ffffff" stroke="#e3e7ec" stroke-width="1"/>
+<text x="1156" y="170.31" font-family="Inter" font-size="11.5" font-weight="400" fill="#6b7684">Poniżej stanu min.</text>
+<text x="1156" y="204.15" font-family="Inter" font-size="23" font-weight="600" fill="#c2520a" letter-spacing="-0.5">3</text>
+<text x="1156" y="226.14" font-family="Inter" font-size="11" font-weight="400" fill="#8a94a0">v_low_stock_alerts</text>
+<rect x="270" y="261.08" width="1148" height="569.06" rx="12" fill="#ffffff" stroke="#e3e7ec" stroke-width="1"/>
+<rect x="271" y="262.08" width="1146" height="57" fill="#fbfcfd"/>
+<rect x="271" y="318.08" width="1146" height="1" fill="#e3e7ec"/>
+<rect x="287" y="273.08" width="503" height="34" rx="8" fill="#ffffff" stroke="#dde2e8" stroke-width="1"/>
+<path d="M310.73 289.41 L310.72 289.79 L310.66 290.19 L310.57 290.59 L310.44 290.98 L310.28 291.35 L310.09 291.7 L309.87 292.03 L309.61 292.35 L309.32 292.64 L309.01 292.9 L308.68 293.13 L308.33 293.33 L307.97 293.5 L307.57 293.63 L307.18 293.73 L306.78 293.79 L306.4 293.81 L306.01 293.8 L305.62 293.75 L305.23 293.67 L304.83 293.55 L304.46 293.39 L304.1 293.2 L303.77 292.98 L303.45 292.73 L303.15 292.45 L302.88 292.14 L302.65 291.81 L302.44 291.47 L302.27 291.11 L302.13 290.72 L302.03 290.32 L301.96 289.93 L301.94 289.54 L301.94 289.16 L301.98 288.77 L302.06 288.37 L302.18 287.97 L302.33 287.6 L302.51 287.24 L302.72 286.9 L302.97 286.58 L303.25 286.28 L303.55 286 L303.88 285.76 L304.22 285.55 L304.58 285.38 L304.96 285.23 L305.36 285.12 L305.75 285.05 L306.14 285.02 L306.52 285.02 L306.91 285.05 L307.31 285.12 L307.71 285.23 L308.09 285.38 L308.45 285.55 L308.79 285.76 L309.12 286 L309.42 286.28 L309.7 286.57 L309.94 286.9 L310.16 287.24 L310.34 287.59 L310.49 287.97 L310.61 288.37 L310.69 288.77 L310.73 289.16 L310.73 289.41 Z" fill="none" stroke="#9aa5b1" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M309.67 292.74 L312.47 295.54" fill="none" stroke="#9aa5b1" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="323" y="294.06" font-family="Inter" font-size="12.5" font-weight="400" fill="#9aa5b1">Szukaj po nazwie, identyfikatorze lub numerze seryjnym…</text>
+<rect x="799" y="273.08" width="150" height="34" rx="8" fill="#ffffff" stroke="#dde2e8" stroke-width="1"/>
+<path d="M931 288.58 L934.5 292.08 L938 288.58" fill="none" stroke="#8a94a0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="811" y="294.06" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">Kategoria: wszystkie</text>
+<rect x="958" y="273.08" width="140" height="34" rx="8" fill="#ffffff" stroke="#dde2e8" stroke-width="1"/>
+<path d="M1080 288.58 L1083.5 292.08 L1087 288.58" fill="none" stroke="#8a94a0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="970" y="294.06" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">Rodzaj: wszystkie</text>
+<rect x="1107" y="273.08" width="150" height="34" rx="8" fill="#ffffff" stroke="#dde2e8" stroke-width="1"/>
+<path d="M1239 288.58 L1242.5 292.08 L1246 288.58" fill="none" stroke="#8a94a0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1119" y="294.06" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">Sekcja: Magazyn główny</text>
+<rect x="1266" y="273.08" width="135" height="34" rx="8" fill="#ffffff" stroke="#dde2e8" stroke-width="1"/>
+<path d="M1383 288.58 L1386.5 292.08 L1390 288.58" fill="none" stroke="#8a94a0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1278" y="294.06" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">Tylko dostępne</text>
+<rect x="271" y="319.08" width="87.02" height="33" fill="#fafbfc"/>
+<rect x="271" y="351.08" width="87.02" height="1" fill="#e3e7ec"/>
+<text x="287" y="338.71" font-family="Inter" font-size="10" font-weight="700" fill="#7b8694" letter-spacing="0.7">ID</text>
+<rect x="358.02" y="319.08" width="269.69" height="33" fill="#fafbfc"/>
+<rect x="358.02" y="351.08" width="269.69" height="1" fill="#e3e7ec"/>
+<text x="374.02" y="338.71" font-family="Inter" font-size="10" font-weight="700" fill="#7b8694" letter-spacing="0.7">NAZWA PRZEDMIOTU</text>
+<rect x="627.7" y="319.08" width="114.09" height="33" fill="#fafbfc"/>
+<rect x="627.7" y="351.08" width="114.09" height="1" fill="#e3e7ec"/>
+<text x="643.7" y="338.71" font-family="Inter" font-size="10" font-weight="700" fill="#7b8694" letter-spacing="0.7">RODZAJ</text>
+<rect x="741.8" y="319.08" width="110.72" height="33" fill="#fafbfc"/>
+<rect x="741.8" y="351.08" width="110.72" height="1" fill="#e3e7ec"/>
+<text x="757.8" y="338.71" font-family="Inter" font-size="10" font-weight="700" fill="#7b8694" letter-spacing="0.7">NR SERYJNY</text>
+<rect x="852.52" y="319.08" width="183.97" height="33" fill="#fafbfc"/>
+<rect x="852.52" y="351.08" width="183.97" height="1" fill="#e3e7ec"/>
+<text x="868.52" y="338.71" font-family="Inter" font-size="10" font-weight="700" fill="#7b8694" letter-spacing="0.7">LOKALIZACJA</text>
+<rect x="1036.48" y="319.08" width="143.88" height="33" fill="#fafbfc"/>
+<rect x="1036.48" y="351.08" width="143.88" height="1" fill="#e3e7ec"/>
+<text x="1052.48" y="338.71" font-family="Inter" font-size="10" font-weight="700" fill="#7b8694" letter-spacing="0.7">DOSTĘPNE / STAN</text>
+<rect x="1180.36" y="319.08" width="139.08" height="33" fill="#fafbfc"/>
+<rect x="1180.36" y="351.08" width="139.08" height="1" fill="#e3e7ec"/>
+<text x="1196.36" y="338.71" font-family="Inter" font-size="10" font-weight="700" fill="#7b8694" letter-spacing="0.7">STATUS</text>
+<rect x="1319.44" y="319.08" width="97.56" height="33" fill="#fafbfc"/>
+<rect x="1319.44" y="351.08" width="97.56" height="1" fill="#e3e7ec"/>
+<text x="1335.44" y="338.71" font-family="Inter" font-size="10" font-weight="700" fill="#7b8694" letter-spacing="0.7">AKCJE</text>
+<rect x="271" y="404.14" width="87.02" height="1" fill="#f0f2f5"/>
+<text x="287" y="382.52" font-family="Roboto Mono" font-size="11.5" font-weight="400" fill="#56616e">IT-0142</text>
+<rect x="358.02" y="404.14" width="269.69" height="1" fill="#f0f2f5"/>
+<text x="374.02" y="374.63" font-family="Inter" font-size="12.5" font-weight="600" fill="#1c2430">Wiertarka udarowa Bosch GSB 18V</text>
+<text x="374.02" y="390.7" font-family="Inter" font-size="11" font-weight="400" fill="#8a94a0">Elektronarzędzia</text>
+<rect x="627.7" y="404.14" width="114.09" height="1" fill="#f0f2f5"/>
+<rect x="643.7" y="369" width="69.33" height="19.22" rx="9.61" fill="#eef1f4"/>
+<text x="651.7" y="382.32" font-family="Inter" font-size="10.5" font-weight="700" fill="#5b6775" letter-spacing="0.11">Narzędzie</text>
+<rect x="741.8" y="404.14" width="110.72" height="1" fill="#f0f2f5"/>
+<text x="757.8" y="382.52" font-family="Roboto Mono" font-size="11.5" font-weight="400" fill="#56616e">SN-88213</text>
+<rect x="852.52" y="404.14" width="183.97" height="1" fill="#f0f2f5"/>
+<text x="868.52" y="382.59" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">A / Regał 3 / Półka B</text>
+<rect x="1036.48" y="404.14" width="143.88" height="1" fill="#f0f2f5"/>
+<text x="1052.48" y="382.59" font-family="Inter" font-size="12.5" font-weight="600" fill="#1c2430">1</text>
+<text x="1061.3" y="382.59" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">/ 1</text>
+<rect x="1180.36" y="404.14" width="139.08" height="1" fill="#f0f2f5"/>
+<rect x="1196.36" y="369" width="66.14" height="19.22" rx="9.61" fill="#e8f6ee"/>
+<text x="1204.36" y="382.32" font-family="Inter" font-size="10.5" font-weight="700" fill="#187441" letter-spacing="0.11">Dostępny</text>
+<rect x="1319.44" y="404.14" width="97.56" height="1" fill="#f0f2f5"/>
+<rect x="1335.44" y="365.61" width="26" height="26" rx="7" fill="#ffffff" stroke="#e3e7ec" stroke-width="1"/>
+<path d="M1342.1 378.61 L1348.44 374.61 L1354.77 378.61 L1348.44 382.61 L1342.1 378.61 Z" fill="none" stroke="#6b7684" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1350.17 378.61 L1350.13 378.99 L1349.99 379.38 L1349.76 379.73 L1349.44 380.03 L1349.07 380.22 L1348.68 380.33 L1348.3 380.34 L1347.91 380.26 L1347.53 380.09 L1347.2 379.82 L1346.94 379.48 L1346.77 379.1 L1346.71 378.71 L1346.73 378.33 L1346.84 377.94 L1347.05 377.57 L1347.35 377.26 L1347.71 377.04 L1348.09 376.91 L1348.47 376.88 L1348.86 376.93 L1349.24 377.08 L1349.6 377.32 L1349.88 377.64 L1350.07 378.02 L1350.16 378.41 L1350.17 378.61 Z" fill="none" stroke="#6b7684" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1367.44" y="365.61" width="26" height="26" rx="7" fill="#ffffff" stroke="#e3e7ec" stroke-width="1"/>
+<path d="M1383.44 373.61 L1385.44 375.61 L1378.44 382.61 L1375.77 383.28 L1376.44 380.61 Z" fill="none" stroke="#6b7684" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="271" y="457.2" width="87.02" height="1" fill="#f0f2f5"/>
+<text x="287" y="435.58" font-family="Roboto Mono" font-size="11.5" font-weight="400" fill="#56616e">IT-0143</text>
+<rect x="358.02" y="457.2" width="269.69" height="1" fill="#f0f2f5"/>
+<text x="374.02" y="427.69" font-family="Inter" font-size="12.5" font-weight="600" fill="#1c2430">Szlifierka kątowa Makita GA9020</text>
+<text x="374.02" y="443.76" font-family="Inter" font-size="11" font-weight="400" fill="#8a94a0">Elektronarzędzia</text>
+<rect x="627.7" y="457.2" width="114.09" height="1" fill="#f0f2f5"/>
+<rect x="643.7" y="422.06" width="69.33" height="19.22" rx="9.61" fill="#eef1f4"/>
+<text x="651.7" y="435.38" font-family="Inter" font-size="10.5" font-weight="700" fill="#5b6775" letter-spacing="0.11">Narzędzie</text>
+<rect x="741.8" y="457.2" width="110.72" height="1" fill="#f0f2f5"/>
+<text x="757.8" y="435.58" font-family="Roboto Mono" font-size="11.5" font-weight="400" fill="#56616e">SN-88319</text>
+<rect x="852.52" y="457.2" width="183.97" height="1" fill="#f0f2f5"/>
+<text x="868.52" y="435.66" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">A / Regał 3 / Półka B</text>
+<rect x="1036.48" y="457.2" width="143.88" height="1" fill="#f0f2f5"/>
+<text x="1052.48" y="435.66" font-family="Inter" font-size="12.5" font-weight="600" fill="#1c2430">0</text>
+<text x="1064.25" y="435.66" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">/ 1</text>
+<rect x="1180.36" y="457.2" width="139.08" height="1" fill="#f0f2f5"/>
+<rect x="1196.36" y="422.06" width="90.47" height="19.22" rx="9.61" fill="#fff2e8"/>
+<text x="1204.36" y="435.38" font-family="Inter" font-size="10.5" font-weight="700" fill="#c2520a" letter-spacing="0.11">Wypożyczony</text>
+<rect x="1319.44" y="457.2" width="97.56" height="1" fill="#f0f2f5"/>
+<rect x="1335.44" y="418.67" width="26" height="26" rx="7" fill="#ffffff" stroke="#e3e7ec" stroke-width="1"/>
+<path d="M1342.1 431.67 L1348.44 427.67 L1354.77 431.67 L1348.44 435.67 L1342.1 431.67 Z" fill="none" stroke="#6b7684" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1350.17 431.67 L1350.13 432.05 L1349.99 432.44 L1349.76 432.8 L1349.44 433.09 L1349.07 433.29 L1348.68 433.39 L1348.3 433.4 L1347.91 433.32 L1347.53 433.15 L1347.2 432.88 L1346.94 432.54 L1346.77 432.16 L1346.71 431.77 L1346.73 431.39 L1346.84 431 L1347.05 430.64 L1347.35 430.33 L1347.71 430.1 L1348.09 429.97 L1348.47 429.94 L1348.86 429.99 L1349.24 430.14 L1349.6 430.38 L1349.88 430.71 L1350.07 431.08 L1350.16 431.47 L1350.17 431.67 Z" fill="none" stroke="#6b7684" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1367.44" y="418.67" width="26" height="26" rx="7" fill="#ffffff" stroke="#e3e7ec" stroke-width="1"/>
+<path d="M1383.44 426.67 L1385.44 428.67 L1378.44 435.67 L1375.77 436.34 L1376.44 433.67 Z" fill="none" stroke="#6b7684" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="271" y="510.27" width="87.02" height="1" fill="#f0f2f5"/>
+<text x="287" y="488.64" font-family="Roboto Mono" font-size="11.5" font-weight="400" fill="#56616e">IT-0150</text>
+<rect x="358.02" y="510.27" width="269.69" height="1" fill="#f0f2f5"/>
+<text x="374.02" y="480.75" font-family="Inter" font-size="12.5" font-weight="600" fill="#1c2430">Młotek murarski 1 kg</text>
+<text x="374.02" y="496.82" font-family="Inter" font-size="11" font-weight="400" fill="#8a94a0">Narzędzia ręczne</text>
+<rect x="627.7" y="510.27" width="114.09" height="1" fill="#f0f2f5"/>
+<rect x="643.7" y="475.13" width="59.63" height="19.22" rx="9.61" fill="#eef1f4"/>
+<text x="651.7" y="488.44" font-family="Inter" font-size="10.5" font-weight="700" fill="#5b6775" letter-spacing="0.11">Zwrotny</text>
+<rect x="741.8" y="510.27" width="110.72" height="1" fill="#f0f2f5"/>
+<text x="757.8" y="488.72" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">—</text>
+<rect x="852.52" y="510.27" width="183.97" height="1" fill="#f0f2f5"/>
+<text x="868.52" y="488.72" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">A / Regał 1 / Półka A</text>
+<rect x="1036.48" y="510.27" width="143.88" height="1" fill="#f0f2f5"/>
+<text x="1052.48" y="488.72" font-family="Inter" font-size="12.5" font-weight="600" fill="#1c2430">6</text>
+<text x="1064" y="488.72" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">/ 8</text>
+<rect x="1180.36" y="510.27" width="139.08" height="1" fill="#f0f2f5"/>
+<rect x="1196.36" y="475.13" width="66.14" height="19.22" rx="9.61" fill="#e8f6ee"/>
+<text x="1204.36" y="488.44" font-family="Inter" font-size="10.5" font-weight="700" fill="#187441" letter-spacing="0.11">Dostępny</text>
+<rect x="1319.44" y="510.27" width="97.56" height="1" fill="#f0f2f5"/>
+<rect x="1335.44" y="471.73" width="26" height="26" rx="7" fill="#ffffff" stroke="#e3e7ec" stroke-width="1"/>
+<path d="M1342.1 484.73 L1348.44 480.73 L1354.77 484.73 L1348.44 488.73 L1342.1 484.73 Z" fill="none" stroke="#6b7684" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1350.17 484.73 L1350.13 485.12 L1349.99 485.5 L1349.76 485.86 L1349.44 486.15 L1349.07 486.35 L1348.68 486.45 L1348.3 486.46 L1347.91 486.39 L1347.53 486.21 L1347.2 485.94 L1346.94 485.6 L1346.77 485.22 L1346.71 484.83 L1346.73 484.46 L1346.84 484.07 L1347.05 483.7 L1347.35 483.39 L1347.71 483.16 L1348.09 483.04 L1348.47 483 L1348.86 483.05 L1349.24 483.2 L1349.6 483.44 L1349.88 483.77 L1350.07 484.14 L1350.16 484.53 L1350.17 484.73 Z" fill="none" stroke="#6b7684" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1367.44" y="471.73" width="26" height="26" rx="7" fill="#ffffff" stroke="#e3e7ec" stroke-width="1"/>
+<path d="M1383.44 479.73 L1385.44 481.73 L1378.44 488.73 L1375.77 489.4 L1376.44 486.73 Z" fill="none" stroke="#6b7684" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="271" y="563.33" width="87.02" height="1" fill="#f0f2f5"/>
+<text x="287" y="541.71" font-family="Roboto Mono" font-size="11.5" font-weight="400" fill="#56616e">IT-0151</text>
+<rect x="358.02" y="563.33" width="269.69" height="1" fill="#f0f2f5"/>
+<text x="374.02" y="533.81" font-family="Inter" font-size="12.5" font-weight="600" fill="#1c2430">Poziomica aluminiowa 120 cm</text>
+<text x="374.02" y="549.89" font-family="Inter" font-size="11" font-weight="400" fill="#8a94a0">Narzędzia pomiarowe</text>
+<rect x="627.7" y="563.33" width="114.09" height="1" fill="#f0f2f5"/>
+<rect x="643.7" y="528.19" width="59.63" height="19.22" rx="9.61" fill="#eef1f4"/>
+<text x="651.7" y="541.51" font-family="Inter" font-size="10.5" font-weight="700" fill="#5b6775" letter-spacing="0.11">Zwrotny</text>
+<rect x="741.8" y="563.33" width="110.72" height="1" fill="#f0f2f5"/>
+<text x="757.8" y="541.78" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">—</text>
+<rect x="852.52" y="563.33" width="183.97" height="1" fill="#f0f2f5"/>
+<text x="868.52" y="541.78" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">A / Regał 1 / Półka C</text>
+<rect x="1036.48" y="563.33" width="143.88" height="1" fill="#f0f2f5"/>
+<text x="1052.48" y="541.78" font-family="Inter" font-size="12.5" font-weight="600" fill="#1c2430">3</text>
+<text x="1063.95" y="541.78" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">/ 4</text>
+<rect x="1180.36" y="563.33" width="139.08" height="1" fill="#f0f2f5"/>
+<rect x="1196.36" y="528.19" width="66.14" height="19.22" rx="9.61" fill="#e8f6ee"/>
+<text x="1204.36" y="541.51" font-family="Inter" font-size="10.5" font-weight="700" fill="#187441" letter-spacing="0.11">Dostępny</text>
+<rect x="1319.44" y="563.33" width="97.56" height="1" fill="#f0f2f5"/>
+<rect x="1335.44" y="524.8" width="26" height="26" rx="7" fill="#ffffff" stroke="#e3e7ec" stroke-width="1"/>
+<path d="M1342.1 537.8 L1348.44 533.8 L1354.77 537.8 L1348.44 541.8 L1342.1 537.8 Z" fill="none" stroke="#6b7684" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1350.17 537.8 L1350.13 538.18 L1349.99 538.57 L1349.76 538.92 L1349.44 539.21 L1349.07 539.41 L1348.68 539.51 L1348.3 539.52 L1347.91 539.45 L1347.53 539.28 L1347.2 539.01 L1346.94 538.66 L1346.77 538.28 L1346.71 537.9 L1346.73 537.52 L1346.84 537.13 L1347.05 536.76 L1347.35 536.45 L1347.71 536.23 L1348.09 536.1 L1348.47 536.06 L1348.86 536.12 L1349.24 536.26 L1349.6 536.51 L1349.88 536.83 L1350.07 537.21 L1350.16 537.6 L1350.17 537.8 Z" fill="none" stroke="#6b7684" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1367.44" y="524.8" width="26" height="26" rx="7" fill="#ffffff" stroke="#e3e7ec" stroke-width="1"/>
+<path d="M1383.44 532.8 L1385.44 534.8 L1378.44 541.8 L1375.77 542.46 L1376.44 539.8 Z" fill="none" stroke="#6b7684" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="271" y="616.39" width="87.02" height="1" fill="#f0f2f5"/>
+<text x="287" y="594.77" font-family="Roboto Mono" font-size="11.5" font-weight="400" fill="#56616e">MT-0304</text>
+<rect x="358.02" y="616.39" width="269.69" height="1" fill="#f0f2f5"/>
+<text x="374.02" y="586.88" font-family="Inter" font-size="12.5" font-weight="600" fill="#1c2430">Wkręty do drewna 4×50 mm</text>
+<text x="374.02" y="602.95" font-family="Inter" font-size="11" font-weight="400" fill="#8a94a0">Materiały złączne · opak. 200 szt.</text>
+<rect x="627.7" y="616.39" width="114.09" height="1" fill="#f0f2f5"/>
+<rect x="643.7" y="581.25" width="73.31" height="19.22" rx="9.61" fill="#eef1f4"/>
+<text x="651.7" y="594.57" font-family="Inter" font-size="10.5" font-weight="700" fill="#5b6775" letter-spacing="0.11">Zużywalny</text>
+<rect x="741.8" y="616.39" width="110.72" height="1" fill="#f0f2f5"/>
+<text x="757.8" y="594.84" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">—</text>
+<rect x="852.52" y="616.39" width="183.97" height="1" fill="#f0f2f5"/>
+<text x="868.52" y="594.84" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">B / Regał 2 / Skrzynia 4</text>
+<rect x="1036.48" y="616.39" width="143.88" height="1" fill="#f0f2f5"/>
+<text x="1052.48" y="594.84" font-family="Inter" font-size="12.5" font-weight="600" fill="#1c2430">12</text>
+<text x="1069.08" y="594.84" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">/ 12 opak.</text>
+<rect x="1180.36" y="616.39" width="139.08" height="1" fill="#f0f2f5"/>
+<rect x="1196.36" y="581.25" width="66.14" height="19.22" rx="9.61" fill="#e8f6ee"/>
+<text x="1204.36" y="594.57" font-family="Inter" font-size="10.5" font-weight="700" fill="#187441" letter-spacing="0.11">Dostępny</text>
+<rect x="1319.44" y="616.39" width="97.56" height="1" fill="#f0f2f5"/>
+<rect x="1335.44" y="577.86" width="26" height="26" rx="7" fill="#ffffff" stroke="#e3e7ec" stroke-width="1"/>
+<path d="M1342.1 590.86 L1348.44 586.86 L1354.77 590.86 L1348.44 594.86 L1342.1 590.86 Z" fill="none" stroke="#6b7684" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1350.17 590.86 L1350.13 591.24 L1349.99 591.63 L1349.76 591.98 L1349.44 592.28 L1349.07 592.47 L1348.68 592.58 L1348.3 592.59 L1347.91 592.51 L1347.53 592.34 L1347.2 592.07 L1346.94 591.73 L1346.77 591.35 L1346.71 590.96 L1346.73 590.58 L1346.84 590.19 L1347.05 589.82 L1347.35 589.51 L1347.71 589.29 L1348.09 589.16 L1348.47 589.13 L1348.86 589.18 L1349.24 589.33 L1349.6 589.57 L1349.88 589.89 L1350.07 590.27 L1350.16 590.66 L1350.17 590.86 Z" fill="none" stroke="#6b7684" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1367.44" y="577.86" width="26" height="26" rx="7" fill="#ffffff" stroke="#e3e7ec" stroke-width="1"/>
+<path d="M1383.44 585.86 L1385.44 587.86 L1378.44 594.86 L1375.77 595.53 L1376.44 592.86 Z" fill="none" stroke="#6b7684" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="271" y="669.45" width="87.02" height="1" fill="#f0f2f5"/>
+<text x="287" y="647.83" font-family="Roboto Mono" font-size="11.5" font-weight="400" fill="#56616e">MT-0311</text>
+<rect x="358.02" y="669.45" width="269.69" height="1" fill="#f0f2f5"/>
+<text x="374.02" y="639.94" font-family="Inter" font-size="12.5" font-weight="600" fill="#1c2430">Silikon sanitarny biały 280 ml</text>
+<text x="374.02" y="656.01" font-family="Inter" font-size="11" font-weight="400" fill="#8a94a0">Chemia budowlana</text>
+<rect x="627.7" y="669.45" width="114.09" height="1" fill="#f0f2f5"/>
+<rect x="643.7" y="634.31" width="73.31" height="19.22" rx="9.61" fill="#eef1f4"/>
+<text x="651.7" y="647.63" font-family="Inter" font-size="10.5" font-weight="700" fill="#5b6775" letter-spacing="0.11">Zużywalny</text>
+<rect x="741.8" y="669.45" width="110.72" height="1" fill="#f0f2f5"/>
+<text x="757.8" y="647.91" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">—</text>
+<rect x="852.52" y="669.45" width="183.97" height="1" fill="#f0f2f5"/>
+<text x="868.52" y="647.91" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">B / Regał 2 / Skrzynia 1</text>
+<rect x="1036.48" y="669.45" width="143.88" height="1" fill="#f0f2f5"/>
+<text x="1052.48" y="647.91" font-family="Inter" font-size="12.5" font-weight="600" fill="#1c2430">4</text>
+<text x="1064.33" y="647.91" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">/ 4 szt.</text>
+<rect x="1180.36" y="669.45" width="139.08" height="1" fill="#f0f2f5"/>
+<rect x="1196.36" y="634.31" width="96.38" height="19.22" rx="9.61" fill="#fdecec"/>
+<text x="1204.36" y="647.63" font-family="Inter" font-size="10.5" font-weight="700" fill="#b4232a" letter-spacing="0.11">Stan minimalny</text>
+<rect x="1319.44" y="669.45" width="97.56" height="1" fill="#f0f2f5"/>
+<rect x="1335.44" y="630.92" width="26" height="26" rx="7" fill="#ffffff" stroke="#e3e7ec" stroke-width="1"/>
+<path d="M1342.1 643.92 L1348.44 639.92 L1354.77 643.92 L1348.44 647.92 L1342.1 643.92 Z" fill="none" stroke="#6b7684" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1350.17 643.92 L1350.13 644.3 L1349.99 644.69 L1349.76 645.05 L1349.44 645.34 L1349.07 645.54 L1348.68 645.64 L1348.3 645.65 L1347.91 645.57 L1347.53 645.4 L1347.2 645.13 L1346.94 644.79 L1346.77 644.41 L1346.71 644.02 L1346.73 643.64 L1346.84 643.25 L1347.05 642.89 L1347.35 642.58 L1347.71 642.35 L1348.09 642.22 L1348.47 642.19 L1348.86 642.24 L1349.24 642.39 L1349.6 642.63 L1349.88 642.96 L1350.07 643.33 L1350.16 643.72 L1350.17 643.92 Z" fill="none" stroke="#6b7684" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1367.44" y="630.92" width="26" height="26" rx="7" fill="#ffffff" stroke="#e3e7ec" stroke-width="1"/>
+<path d="M1383.44 638.92 L1385.44 640.92 L1378.44 647.92 L1375.77 648.59 L1376.44 645.92 Z" fill="none" stroke="#6b7684" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="271" y="722.52" width="87.02" height="1" fill="#f0f2f5"/>
+<text x="287" y="700.89" font-family="Roboto Mono" font-size="11.5" font-weight="400" fill="#56616e">MT-0318</text>
+<rect x="358.02" y="722.52" width="269.69" height="1" fill="#f0f2f5"/>
+<text x="374.02" y="693.0" font-family="Inter" font-size="12.5" font-weight="600" fill="#1c2430">Taśma malarska 48 mm × 50 m</text>
+<text x="374.02" y="709.07" font-family="Inter" font-size="11" font-weight="400" fill="#8a94a0">Materiały wykończeniowe</text>
+<rect x="627.7" y="722.52" width="114.09" height="1" fill="#f0f2f5"/>
+<rect x="643.7" y="687.38" width="73.31" height="19.22" rx="9.61" fill="#eef1f4"/>
+<text x="651.7" y="700.69" font-family="Inter" font-size="10.5" font-weight="700" fill="#5b6775" letter-spacing="0.11">Zużywalny</text>
+<rect x="741.8" y="722.52" width="110.72" height="1" fill="#f0f2f5"/>
+<text x="757.8" y="700.97" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">—</text>
+<rect x="852.52" y="722.52" width="183.97" height="1" fill="#f0f2f5"/>
+<text x="868.52" y="700.97" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">B / Regał 1 / Skrzynia 2</text>
+<rect x="1036.48" y="722.52" width="143.88" height="1" fill="#f0f2f5"/>
+<text x="1052.48" y="700.97" font-family="Inter" font-size="12.5" font-weight="600" fill="#1c2430">2</text>
+<text x="1063.8" y="700.97" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">/ 2 szt.</text>
+<rect x="1180.36" y="722.52" width="139.08" height="1" fill="#f0f2f5"/>
+<rect x="1196.36" y="687.38" width="96.38" height="19.22" rx="9.61" fill="#fdecec"/>
+<text x="1204.36" y="700.69" font-family="Inter" font-size="10.5" font-weight="700" fill="#b4232a" letter-spacing="0.11">Stan minimalny</text>
+<rect x="1319.44" y="722.52" width="97.56" height="1" fill="#f0f2f5"/>
+<rect x="1335.44" y="683.98" width="26" height="26" rx="7" fill="#ffffff" stroke="#e3e7ec" stroke-width="1"/>
+<path d="M1342.1 696.98 L1348.44 692.98 L1354.77 696.98 L1348.44 700.98 L1342.1 696.98 Z" fill="none" stroke="#6b7684" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1350.17 696.98 L1350.13 697.37 L1349.99 697.75 L1349.76 698.11 L1349.44 698.4 L1349.07 698.6 L1348.68 698.7 L1348.3 698.71 L1347.91 698.64 L1347.53 698.46 L1347.2 698.19 L1346.94 697.85 L1346.77 697.47 L1346.71 697.08 L1346.73 696.71 L1346.84 696.32 L1347.05 695.95 L1347.35 695.64 L1347.71 695.41 L1348.09 695.29 L1348.47 695.25 L1348.86 695.3 L1349.24 695.45 L1349.6 695.69 L1349.88 696.02 L1350.07 696.39 L1350.16 696.78 L1350.17 696.98 Z" fill="none" stroke="#6b7684" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1367.44" y="683.98" width="26" height="26" rx="7" fill="#ffffff" stroke="#e3e7ec" stroke-width="1"/>
+<path d="M1383.44 691.98 L1385.44 693.98 L1378.44 700.98 L1375.77 701.65 L1376.44 698.98 Z" fill="none" stroke="#6b7684" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="271" y="775.58" width="87.02" height="1" fill="#f0f2f5"/>
+<text x="287" y="753.96" font-family="Roboto Mono" font-size="11.5" font-weight="400" fill="#56616e">IT-0163</text>
+<rect x="358.02" y="775.58" width="269.69" height="1" fill="#f0f2f5"/>
+<text x="374.02" y="746.06" font-family="Inter" font-size="12.5" font-weight="600" fill="#1c2430">Łopata szpadlowa</text>
+<text x="374.02" y="762.14" font-family="Inter" font-size="11" font-weight="400" fill="#8a94a0">Narzędzia ręczne</text>
+<rect x="627.7" y="775.58" width="114.09" height="1" fill="#f0f2f5"/>
+<rect x="643.7" y="740.44" width="59.63" height="19.22" rx="9.61" fill="#eef1f4"/>
+<text x="651.7" y="753.76" font-family="Inter" font-size="10.5" font-weight="700" fill="#5b6775" letter-spacing="0.11">Zwrotny</text>
+<rect x="741.8" y="775.58" width="110.72" height="1" fill="#f0f2f5"/>
+<text x="757.8" y="754.03" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">—</text>
+<rect x="852.52" y="775.58" width="183.97" height="1" fill="#f0f2f5"/>
+<text x="868.52" y="754.03" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">A / Regał 4 / Stojak 1</text>
+<rect x="1036.48" y="775.58" width="143.88" height="1" fill="#f0f2f5"/>
+<text x="1052.48" y="754.03" font-family="Inter" font-size="12.5" font-weight="600" fill="#1c2430">5</text>
+<text x="1063.66" y="754.03" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">/ 5</text>
+<rect x="1180.36" y="775.58" width="139.08" height="1" fill="#f0f2f5"/>
+<rect x="1196.36" y="740.44" width="66.14" height="19.22" rx="9.61" fill="#e8f6ee"/>
+<text x="1204.36" y="753.76" font-family="Inter" font-size="10.5" font-weight="700" fill="#187441" letter-spacing="0.11">Dostępny</text>
+<rect x="1319.44" y="775.58" width="97.56" height="1" fill="#f0f2f5"/>
+<rect x="1335.44" y="737.05" width="26" height="26" rx="7" fill="#ffffff" stroke="#e3e7ec" stroke-width="1"/>
+<path d="M1342.1 750.05 L1348.44 746.05 L1354.77 750.05 L1348.44 754.05 L1342.1 750.05 Z" fill="none" stroke="#6b7684" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1350.17 750.05 L1350.13 750.43 L1349.99 750.82 L1349.76 751.17 L1349.44 751.46 L1349.07 751.66 L1348.68 751.76 L1348.3 751.77 L1347.91 751.7 L1347.53 751.53 L1347.2 751.26 L1346.94 750.91 L1346.77 750.53 L1346.71 750.15 L1346.73 749.77 L1346.84 749.38 L1347.05 749.01 L1347.35 748.7 L1347.71 748.48 L1348.09 748.35 L1348.47 748.31 L1348.86 748.37 L1349.24 748.51 L1349.6 748.76 L1349.88 749.08 L1350.07 749.46 L1350.16 749.85 L1350.17 750.05 Z" fill="none" stroke="#6b7684" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1367.44" y="737.05" width="26" height="26" rx="7" fill="#ffffff" stroke="#e3e7ec" stroke-width="1"/>
+<path d="M1383.44 745.05 L1385.44 747.05 L1378.44 754.05 L1375.77 754.71 L1376.44 752.05 Z" fill="none" stroke="#6b7684" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="287" y="807.02" font-family="Roboto Mono" font-size="11.5" font-weight="400" fill="#56616e">IT-0128</text>
+<text x="374.02" y="799.13" font-family="Inter" font-size="12.5" font-weight="600" fill="#1c2430">Agregat prądotwórczy Honda EU22i</text>
+<text x="374.02" y="815.2" font-family="Inter" font-size="11" font-weight="400" fill="#8a94a0">Sprzęt ciężki</text>
+<rect x="643.7" y="793.5" width="69.33" height="19.22" rx="9.61" fill="#eef1f4"/>
+<text x="651.7" y="806.82" font-family="Inter" font-size="10.5" font-weight="700" fill="#5b6775" letter-spacing="0.11">Narzędzie</text>
+<text x="757.8" y="807.02" font-family="Roboto Mono" font-size="11.5" font-weight="400" fill="#56616e">SN-41007</text>
+<text x="868.52" y="807.09" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">C / Boks 2</text>
+<text x="1052.48" y="807.09" font-family="Inter" font-size="12.5" font-weight="600" fill="#1c2430">0</text>
+<text x="1064.25" y="807.09" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">/ 1</text>
+<rect x="1196.36" y="793.5" width="77.94" height="19.22" rx="9.61" fill="#fdecec"/>
+<text x="1204.36" y="806.82" font-family="Inter" font-size="10.5" font-weight="700" fill="#b4232a" letter-spacing="0.11">W naprawie</text>
+<rect x="1335.44" y="790.11" width="26" height="26" rx="7" fill="#ffffff" stroke="#e3e7ec" stroke-width="1"/>
+<path d="M1342.1 803.11 L1348.44 799.11 L1354.77 803.11 L1348.44 807.11 L1342.1 803.11 Z" fill="none" stroke="#6b7684" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1350.17 803.11 L1350.13 803.49 L1349.99 803.88 L1349.76 804.23 L1349.44 804.53 L1349.07 804.72 L1348.68 804.83 L1348.3 804.84 L1347.91 804.76 L1347.53 804.59 L1347.2 804.32 L1346.94 803.98 L1346.77 803.6 L1346.71 803.21 L1346.73 802.83 L1346.84 802.44 L1347.05 802.07 L1347.35 801.76 L1347.71 801.54 L1348.09 801.41 L1348.47 801.38 L1348.86 801.43 L1349.24 801.58 L1349.6 801.82 L1349.88 802.14 L1350.07 802.52 L1350.16 802.91 L1350.17 803.11 Z" fill="none" stroke="#6b7684" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1367.44" y="790.11" width="26" height="26" rx="7" fill="#ffffff" stroke="#e3e7ec" stroke-width="1"/>
+<path d="M1383.44 798.11 L1385.44 800.11 L1378.44 807.11 L1375.77 807.78 L1376.44 805.11 Z" fill="none" stroke="#6b7684" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="270" y="844.14" width="1148" height="39.67" rx="9" fill="#fff8f2" stroke="#ffddc2" stroke-width="1"/>
+<path d="M291 859.01 L296.53 868.61 L285.47 868.61 Z" fill="none" stroke="#f2690d" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M291 862.81 L291 865.47" fill="none" stroke="#f2690d" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M291 867.21 L291 867.27" fill="none" stroke="#f2690d" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="308" y="868.0" font-family="Inter" font-size="12" font-weight="700" fill="#8a4a10">Alert stanów minimalnych:</text>
+<text x="467.86" y="868.0" font-family="Inter" font-size="12" font-weight="400" fill="#8a4a10">3 pozycje spadły poniżej progu</text>
+<text x="648.33" y="868.11" font-family="Roboto Mono" font-size="11.5" font-weight="400" fill="#56616e">min_quantity</text>
+<text x="734.53" y="868.0" font-family="Inter" font-size="12" font-weight="400" fill="#8a4a10">—
+ Silikon sanitarny biały (4 szt.), Taśma malarska 48 mm (2 szt.), Pianka montażowa (1 szt.).</text>
+</g>
+</svg>

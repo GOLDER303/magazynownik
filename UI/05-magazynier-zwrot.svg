@@ -1,0 +1,252 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+<g id="05-magazynier-zwrot">
+<rect x="0" y="0" width="1440" height="900" fill="#f4f6f8"/>
+<rect x="0" y="0" width="248" height="900" fill="#161d27"/>
+<rect x="0" y="68.23" width="248" height="1" fill="#ffffff" fill-opacity="0.07"/>
+<path d="M31 24.3 L41.31 30.16 L31 36.02 L20.69 30.16 Z" fill="#ff9a4d"/>
+<path d="M20.69 30.16 L31 36.02 L31 44.92 L20.69 39.06 Z" fill="#f2690d"/>
+<path d="M41.31 30.16 L31 36.02 L31 44.92 L41.31 39.06 Z" fill="#1c2430"/>
+<path d="M39.31 36.28 L39.06 36.7 L38.75 37.06 L38.41 37.34 L38.07 37.51 L37.73 37.58 L37.44 37.53 L37.21 37.37 L37.05 37.1 L36.98 36.75 L37 36.34 L37.1 35.9 L37.29 35.46 L37.55 35.05 L37.86 34.69 L38.2 34.42 L38.55 34.24 L38.87 34.18 L39.16 34.24 L39.31 34.33" fill="none" stroke="#ffb375" stroke-width="1.17" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M37.58 36.29 L37.23 36.49 L36.89 36.68 L36.54 36.88 L36.19 37.08 L35.84 37.28 L35.5 37.47 L35.15 37.67 L34.8 37.87 L34.45 38.07 L34.11 38.27 L33.76 38.46 L33.41 38.66 L33.06 38.86 L33 38.89" fill="none" stroke="#ffb375" stroke-width="1.29" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="56" y="31.77" font-family="Inter" font-size="14.5" font-weight="600" fill="#ffffff" letter-spacing="0.1">Magazynownik</text>
+<text x="56" y="49.33" font-family="Inter" font-size="10.5" font-weight="400" fill="#6d7a89">Panel magazyniera</text>
+<path d="M22.97 91.89 L23.37 91.89 L23.77 91.89 L24.17 91.89 L24.58 91.89 L24.97 91.89 L25.38 91.9 L25.79 92.1 L26.06 92.47 L26.13 92.88 L26.13 93.28 L26.13 93.68 L26.13 94.08 L26.13 94.48 L26.13 94.88 L26.09 95.29 L25.86 95.68 L25.48 95.92 L25.06 95.97 L24.66 95.97 L24.26 95.97 L23.86 95.97 L23.46 95.97 L23.06 95.97 L22.65 95.91 L22.27 95.65 L22.07 95.25 L22.04 94.85 L22.04 94.45 L22.04 94.05 L22.04 93.65 L22.04 93.25 L22.04 92.85 L22.13 92.43 L22.42 92.07 L22.82 91.9 L22.97 91.89 Z" fill="none" stroke="#8c99a8" stroke-width="1.11" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M28.81 91.89 L29.21 91.89 L29.61 91.89 L30.01 91.89 L30.41 91.89 L30.81 91.89 L31.21 91.9 L31.62 92.1 L31.89 92.47 L31.96 92.88 L31.96 93.28 L31.96 93.68 L31.96 94.08 L31.96 94.48 L31.96 94.88 L31.92 95.29 L31.7 95.68 L31.31 95.92 L30.9 95.97 L30.5 95.97 L30.1 95.97 L29.7 95.97 L29.3 95.97 L28.9 95.97 L28.49 95.91 L28.11 95.65 L27.9 95.25 L27.88 94.85 L27.88 94.45 L27.88 94.05 L27.88 93.65 L27.88 93.25 L27.88 92.85 L27.96 92.43 L28.25 92.07 L28.66 91.9 L28.81 91.89 Z" fill="none" stroke="#8c99a8" stroke-width="1.11" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22.97 97.72 L23.37 97.72 L23.77 97.72 L24.17 97.72 L24.58 97.72 L24.97 97.72 L25.38 97.74 L25.79 97.93 L26.06 98.3 L26.13 98.72 L26.13 99.12 L26.13 99.52 L26.13 99.92 L26.13 100.32 L26.13 100.72 L26.09 101.12 L25.86 101.52 L25.48 101.76 L25.06 101.8 L24.66 101.8 L24.26 101.8 L23.86 101.8 L23.46 101.8 L23.06 101.8 L22.65 101.74 L22.27 101.49 L22.07 101.09 L22.04 100.68 L22.04 100.28 L22.04 99.88 L22.04 99.48 L22.04 99.08 L22.04 98.68 L22.13 98.26 L22.42 97.91 L22.82 97.73 L22.97 97.72 Z" fill="none" stroke="#8c99a8" stroke-width="1.11" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M28.81 97.72 L29.21 97.72 L29.61 97.72 L30.01 97.72 L30.41 97.72 L30.81 97.72 L31.21 97.74 L31.62 97.93 L31.89 98.3 L31.96 98.72 L31.96 99.12 L31.96 99.52 L31.96 99.92 L31.96 100.32 L31.96 100.72 L31.92 101.12 L31.7 101.52 L31.31 101.76 L30.9 101.8 L30.5 101.8 L30.1 101.8 L29.7 101.8 L29.3 101.8 L28.9 101.8 L28.49 101.74 L28.11 101.49 L27.9 101.09 L27.88 100.68 L27.88 100.28 L27.88 99.88 L27.88 99.48 L27.88 99.08 L27.88 98.68 L27.96 98.26 L28.25 97.91 L28.66 97.73 L28.81 97.72 Z" fill="none" stroke="#8c99a8" stroke-width="1.11" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="43" y="100.55" font-family="Inter" font-size="10.5" font-weight="600" fill="#7a8796" letter-spacing="1.16">PULPIT</text>
+<rect x="29" y="111.45" width="1" height="61.25" fill="#ffffff" fill-opacity="0.08"/>
+<text x="52" y="130.5" font-family="Inter" font-size="12.5" font-weight="400" fill="#9faab8">Przegląd dnia</text>
+<text x="52" y="161.63" font-family="Inter" font-size="12.5" font-weight="400" fill="#9faab8">Alerty stanów</text>
+<rect x="209.63" y="149.39" width="18.38" height="16.5" rx="8.25" fill="#ffffff" fill-opacity="0.1"/>
+<text x="215.63" y="161.02" font-family="Inter" font-size="10" font-weight="600" fill="#c3ccd6">3</text>
+<path d="M27 193.3 L31.67 195.69 L31.67 200.94 L27 203.33 L22.33 200.94 L22.33 195.69 Z" fill="none" stroke="#8c99a8" stroke-width="1.11" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22.33 195.69 L27 198.08 L31.67 195.69" fill="none" stroke="#8c99a8" stroke-width="1.11" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M27 198.08 L27 203.33" fill="none" stroke="#8c99a8" stroke-width="1.11" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="43" y="202.02" font-family="Inter" font-size="10.5" font-weight="600" fill="#7a8796" letter-spacing="1.16">MAGAZYN</text>
+<rect x="29" y="212.92" width="1" height="123.5" fill="#ffffff" fill-opacity="0.08"/>
+<text x="52" y="231.97" font-family="Inter" font-size="12.5" font-weight="400" fill="#9faab8">Katalog przedmiotów</text>
+<text x="52" y="263.09" font-family="Inter" font-size="12.5" font-weight="400" fill="#9faab8">Dodaj przedmiot</text>
+<text x="52" y="294.22" font-family="Inter" font-size="12.5" font-weight="400" fill="#9faab8">Modele i kategorie</text>
+<text x="52" y="325.34" font-family="Inter" font-size="12.5" font-weight="400" fill="#9faab8">Lokalizacje (sekcje)</text>
+<path d="M22.33 359.99 L29.92 359.99" fill="none" stroke="#8c99a8" stroke-width="1.11" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M27.88 357.95 L29.92 359.99 L27.88 362.03" fill="none" stroke="#8c99a8" stroke-width="1.11" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M31.67 364.07 L24.08 364.07" fill="none" stroke="#8c99a8" stroke-width="1.11" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M26.13 362.03 L24.08 364.07 L26.13 366.11" fill="none" stroke="#8c99a8" stroke-width="1.11" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="43" y="365.74" font-family="Inter" font-size="10.5" font-weight="600" fill="#7a8796" letter-spacing="1.16">WYPOŻYCZENIA</text>
+<rect x="29" y="376.64" width="1" height="123.5" fill="#ffffff" fill-opacity="0.08"/>
+<text x="52" y="395.69" font-family="Inter" font-size="12.5" font-weight="400" fill="#9faab8">Nowe wypożyczenie</text>
+<text x="52" y="426.81" font-family="Inter" font-size="12.5" font-weight="400" fill="#9faab8">Aktywne wypożyczenia</text>
+<rect x="205.09" y="414.58" width="22.91" height="16.5" rx="8.25" fill="#ffffff" fill-opacity="0.1"/>
+<text x="211.09" y="426.21" font-family="Inter" font-size="10" font-weight="600" fill="#c3ccd6">14</text>
+<rect x="42" y="438.89" width="196" height="30.13" rx="7" fill="#f2690d" fill-opacity="0.15"/>
+<text x="52" y="457.94" font-family="Inter" font-size="12.5" font-weight="600" fill="#ffb375">Rejestracja zwrotu</text>
+<text x="52" y="489.06" font-family="Inter" font-size="12.5" font-weight="400" fill="#9faab8">Przeterminowane</text>
+<rect x="209.77" y="476.83" width="18.23" height="16.5" rx="8.25" fill="#ffffff" fill-opacity="0.1"/>
+<text x="215.77" y="488.46" font-family="Inter" font-size="10" font-weight="600" fill="#c3ccd6">2</text>
+<path d="M31.96 525.75 L31.94 526.13 L31.9 526.52 L31.82 526.92 L31.7 527.32 L31.56 527.7 L31.39 528.06 L31.18 528.41 L30.95 528.74 L30.69 529.06 L30.41 529.35 L30.1 529.62 L29.78 529.86 L29.43 530.07 L29.08 530.25 L28.71 530.41 L28.31 530.53 L27.91 530.62 L27.52 530.68 L27.13 530.71 L26.75 530.7 L26.36 530.67 L25.97 530.6 L25.57 530.5 L25.17 530.36 L24.81 530.2 L24.46 530.01 L24.12 529.79 L23.8 529.54 L23.5 529.26 L23.22 528.96 L22.97 528.64 L22.75 528.3 L22.56 527.95 L22.4 527.59 L22.26 527.2 L22.15 526.8 L22.08 526.4 L22.05 526.01 L22.04 525.63 L22.07 525.25 L22.12 524.85 L22.21 524.46 L22.34 524.06 L22.49 523.68 L22.67 523.33 L22.88 522.99 L23.12 522.66 L23.39 522.35 L23.68 522.07 L24 521.81 L24.33 521.57 L24.67 521.37 L25.03 521.2 L25.42 521.05 L25.81 520.94 L26.21 520.85 L26.6 520.81 L26.99 520.79 L27.37 520.81 L27.76 520.85 L28.16 520.93 L28.55 521.04 L28.94 521.19 L29.3 521.36 L29.65 521.56 L29.98 521.79 L30.3 522.04 L30.59 522.33 L30.86 522.64 L31.1 522.96 L31.31 523.3 L31.5 523.66 L31.65 524.03 L31.78 524.43 L31.87 524.82 L31.93 525.22 L31.96 525.6 L31.96 525.75 Z" fill="none" stroke="#8c99a8" stroke-width="1.11" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M27 522.95 L27 525.75 L28.87 526.92" fill="none" stroke="#8c99a8" stroke-width="1.11" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="43" y="529.46" font-family="Inter" font-size="10.5" font-weight="600" fill="#7a8796" letter-spacing="1.16">HISTORIA</text>
+<rect x="29" y="540.36" width="1" height="61.25" fill="#ffffff" fill-opacity="0.08"/>
+<text x="52" y="559.41" font-family="Inter" font-size="12.5" font-weight="400" fill="#9faab8">Operacje magazynowe</text>
+<text x="52" y="590.53" font-family="Inter" font-size="12.5" font-weight="400" fill="#9faab8">Historia pracownika</text>
+<rect x="0" y="842.22" width="248" height="1" fill="#ffffff" fill-opacity="0.07"/>
+<rect x="14" y="858.61" width="26" height="26" rx="13" fill="#f2690d" fill-opacity="0.22"/>
+<text x="19.08" y="875.32" font-family="Inter" font-size="10.5" font-weight="700" fill="#ffb375">AN</text>
+<text x="49" y="867.08" font-family="Inter" font-size="12" font-weight="600" fill="#e6ebf0">Anna Nowak</text>
+<text x="49" y="884.93" font-family="Inter" font-size="10.5" font-weight="400" fill="#6d7a89">Magazynier</text>
+<path d="M224.67 876.94 L222 876.94 A1.33 1.33 0 0 1 220.67 875.61 L220.67 867.61 A1.33 1.33 0 0 1 222 866.28 L224.67 866.28" fill="none" stroke="#9faab8" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M228.33 869.08 L230.87 871.61 L228.33 874.14" fill="none" stroke="#9faab8" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M230.87 871.61 L224.33 871.61" fill="none" stroke="#9faab8" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="248" y="0" width="1192" height="58" fill="#ffffff"/>
+<rect x="248" y="57" width="1192" height="1" fill="#e3e7ec"/>
+<text x="270" y="32.66" font-family="Inter" font-size="12" font-weight="400" fill="#6b7684">Wypożyczenia</text>
+<text x="356.48" y="32.66" font-family="Inter" font-size="12" font-weight="600" fill="#1c2430">›</text>
+<text x="364.86" y="32.66" font-family="Inter" font-size="12" font-weight="600" fill="#1c2430">Rejestracja zwrotu</text>
+<rect x="929.59" y="11.5" width="296" height="34" rx="8" fill="#fafbfc" stroke="#dde2e8" stroke-width="1"/>
+<path d="M952.33 27.83 L952.31 28.22 L952.26 28.61 L952.17 29.01 L952.04 29.4 L951.88 29.77 L951.69 30.12 L951.46 30.46 L951.2 30.77 L950.92 31.06 L950.6 31.33 L950.27 31.56 L949.92 31.75 L949.56 31.92 L949.17 32.05 L948.77 32.15 L948.38 32.21 L947.99 32.23 L947.61 32.22 L947.22 32.18 L946.82 32.09 L946.42 31.97 L946.05 31.81 L945.7 31.63 L945.36 31.41 L945.04 31.15 L944.74 30.87 L944.48 30.56 L944.24 30.23 L944.04 29.89 L943.87 29.53 L943.73 29.14 L943.62 28.74 L943.56 28.35 L943.53 27.96 L943.53 27.58 L943.57 27.19 L943.65 26.79 L943.77 26.39 L943.92 26.02 L944.1 25.66 L944.31 25.32 L944.56 25 L944.84 24.7 L945.14 24.43 L945.47 24.18 L945.81 23.97 L946.17 23.8 L946.55 23.65 L946.95 23.54 L947.35 23.47 L947.74 23.44 L948.12 23.44 L948.51 23.47 L948.9 23.54 L949.3 23.65 L949.68 23.8 L950.04 23.97 L950.38 24.18 L950.71 24.42 L951.01 24.7 L951.29 25 L951.54 25.32 L951.75 25.66 L951.93 26.02 L952.08 26.39 L952.2 26.79 L952.28 27.19 L952.32 27.58 L952.33 27.83 Z" fill="none" stroke="#9aa5b1" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M951.26 31.17 L954.06 33.97" fill="none" stroke="#9aa5b1" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="964.59" y="32.49" font-family="Inter" font-size="12.5" font-weight="400" fill="#9aa5b1">Szukaj przedmiotu lub pracownika…</text>
+<rect x="1239.59" y="11.5" width="34" height="34" rx="8" fill="#ffffff" stroke="#dde2e8" stroke-width="1"/>
+<path d="M1260.59 26.5 A4 4 0 1 0 1252.59 26.5 C1252.59 29.83 1251.26 30.77 1251.26 30.77 L1261.93 30.77 L1260.59 26.5 Z" fill="none" stroke="#5b6775" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1257.73 33.37 A1.33 1.33 0 0 1 1255.46 33.37" fill="none" stroke="#5b6775" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1258.59" y="19.5" width="6" height="6" rx="3" fill="#f2690d"/>
+<rect x="1287.59" y="9.28" width="1" height="38.42" fill="#e3e7ec"/>
+<rect x="1300.59" y="12.48" width="32" height="32" rx="16" fill="#fff2e8"/>
+<text x="1307.91" y="32.32" font-family="Inter" font-size="11.5" font-weight="700" fill="#c2520a">AN</text>
+<text x="1341.59" y="22.33" font-family="Inter" font-size="12.5" font-weight="600" fill="#1c2430">Anna Nowak</text>
+<text x="1341.59" y="42.72" font-family="Inter" font-size="10.5" font-weight="400" fill="#6b7684">Magazynier</text>
+<text x="270" y="99.27" font-family="Inter" font-size="20" font-weight="600" fill="#1c2430" letter-spacing="-0.2">Rejestracja zwrotu</text>
+<text x="270" y="123.05" font-family="Inter" font-size="12.5" font-weight="400" fill="#6b7684">Przyjęcie sprzętu i kontrola stanu technicznego (UC-04)</text>
+<rect x="1086.33" y="86.06" width="171.55" height="34" rx="8" fill="#ffffff" stroke="#dde2e8" stroke-width="1"/>
+<path d="M1114.99 103.06 L1114.98 103.44 L1114.94 103.84 L1114.87 104.23 L1114.77 104.63 L1114.64 105.03 L1114.49 105.4 L1114.31 105.76 L1114.11 106.1 L1113.88 106.44 L1113.63 106.75 L1113.35 107.05 L1113.05 107.33 L1112.74 107.59 L1112.4 107.82 L1112.06 108.03 L1111.7 108.21 L1111.34 108.36 L1110.94 108.5 L1110.54 108.6 L1110.14 108.67 L1109.75 108.71 L1109.37 108.73 L1108.99 108.72 L1108.6 108.68 L1108.2 108.62 L1107.81 108.52 L1107.41 108.39 L1107.03 108.24 L1106.67 108.07 L1106.33 107.87 L1105.99 107.64 L1105.67 107.39 L1105.37 107.12 L1105.09 106.82 L1104.83 106.51 L1104.59 106.18 L1104.38 105.83 L1104.2 105.48 L1104.05 105.11 L1103.91 104.72 L1103.8 104.32 L1103.73 103.92 L1103.68 103.53 L1103.66 103.15 L1103.67 102.76 L1103.7 102.38 L1103.77 101.98 L1103.86 101.58 L1103.98 101.19 L1104.13 100.81 L1104.3 100.45 L1104.5 100.1 L1104.72 99.76 L1104.97 99.44 L1105.24 99.14 L1105.54 98.85 L1105.85 98.59 L1106.18 98.35 L1106.52 98.14 L1106.87 97.95 L1107.23 97.8 L1107.63 97.66 L1108.03 97.55 L1108.43 97.47 L1108.82 97.42 L1109.2 97.4 L1109.58 97.4 L1109.97 97.43 L1110.37 97.49 L1110.76 97.58 L1111.16 97.7 L1111.55 97.85 L1111.9 98.02 L1112.25 98.21 L1112.59 98.43 L1112.92 98.68 L1113.22 98.95 L1113.51 99.24 L1113.77 99.55 L1114.01 99.88 L1114.23 100.22 L1114.42 100.57 L1114.58 100.93 L1114.72 101.32 L1114.83 101.72 L1114.92 102.12 L1114.97 102.51 L1114.99 102.9 L1114.99 103.06 Z" fill="none" stroke="#39424e" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1109.33 99.86 L1109.33 103.06 L1111.46 104.4" fill="none" stroke="#39424e" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1124.33" y="107.05" font-family="Inter" font-size="12.5" font-weight="600" fill="#39424e">Historia dokumentu</text>
+<rect x="1266.88" y="86.06" width="151.13" height="34" rx="8" fill="#f2690d" stroke="#f2690d" stroke-width="1"/>
+<path d="M1285.21 103.4 L1288.21 106.4 L1294.54 100.06" fill="none" stroke="#ffffff" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1304.88" y="107.05" font-family="Inter" font-size="12.5" font-weight="600" fill="#ffffff">Zatwierdź zwrot</text>
+<rect x="270" y="144.13" width="802" height="206.2" rx="12" fill="#ffffff" stroke="#e3e7ec" stroke-width="1"/>
+<rect x="271" y="188.69" width="800" height="1" fill="#e3e7ec"/>
+<path d="M298.73 166.24 L298.72 166.62 L298.66 167.02 L298.57 167.41 L298.44 167.81 L298.28 168.18 L298.09 168.53 L297.87 168.86 L297.61 169.18 L297.32 169.47 L297.01 169.73 L296.68 169.96 L296.33 170.16 L295.97 170.32 L295.57 170.46 L295.18 170.56 L294.78 170.62 L294.4 170.64 L294.01 170.63 L293.62 170.58 L293.23 170.5 L292.83 170.37 L292.46 170.22 L292.1 170.03 L291.77 169.81 L291.45 169.56 L291.15 169.28 L290.88 168.97 L290.65 168.64 L290.44 168.29 L290.27 167.94 L290.13 167.55 L290.03 167.15 L289.96 166.75 L289.94 166.37 L289.94 165.99 L289.98 165.6 L290.06 165.2 L290.18 164.8 L290.33 164.42 L290.51 164.07 L290.72 163.73 L290.97 163.4 L291.25 163.1 L291.55 162.83 L291.88 162.59 L292.22 162.38 L292.58 162.21 L292.96 162.06 L293.36 161.95 L293.75 161.88 L294.14 161.84 L294.52 161.84 L294.91 161.88 L295.31 161.95 L295.71 162.06 L296.09 162.21 L296.45 162.38 L296.79 162.59 L297.12 162.83 L297.42 163.1 L297.7 163.4 L297.94 163.73 L298.16 164.07 L298.34 164.42 L298.49 164.8 L298.61 165.2 L298.69 165.59 L298.73 165.98 L298.73 166.24 Z" fill="none" stroke="#1c2430" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M297.67 169.57 L300.47 172.37" fill="none" stroke="#1c2430" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="312" y="171.03" font-family="Inter" font-size="13.5" font-weight="600" fill="#1c2430">Wyszukaj wypożyczenie</text>
+<text x="675.47" y="170.75" font-family="Inter" font-size="11.5" font-weight="600" fill="#6b7684">po numerze dokumentu, identyfikatorze przedmiotu lub pracowniku</text>
+<text x="287" y="217.87" font-family="Inter" font-size="11.5" font-weight="600" fill="#4a5563">Numer dokumentu</text>
+<rect x="287" y="227.36" width="248" height="34" rx="8" fill="#ffffff" stroke="#f2690d" stroke-width="1"/>
+<text x="299" y="248.34" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">WYP/2026/0118</text>
+<text x="547" y="217.87" font-family="Inter" font-size="11.5" font-weight="600" fill="#4a5563">Identyfikator przedmiotu</text>
+<rect x="547" y="227.36" width="248" height="34" rx="8" fill="#ffffff" stroke="#dde2e8" stroke-width="1"/>
+<text x="559" y="248.34" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">IT-0142</text>
+<text x="807" y="217.87" font-family="Inter" font-size="11.5" font-weight="600" fill="#4a5563">Pracownik</text>
+<rect x="807" y="227.36" width="248" height="34" rx="8" fill="#ffffff" stroke="#dde2e8" stroke-width="1"/>
+<path d="M1037 242.86 L1040.5 246.36 L1044 242.86" fill="none" stroke="#8a94a0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="819" y="248.34" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">Jan Kowalski</text>
+<rect x="287" y="274.36" width="768" height="60.97" rx="9" fill="#fafbfc" stroke="#e3e7ec" stroke-width="1"/>
+<text x="301" y="298.54" font-family="Inter" font-size="11.5" font-weight="400" fill="#6b7684">Dokument</text>
+<text x="301" y="318.0" font-family="Roboto Mono" font-size="11.5" font-weight="700" fill="#56616e">WYP/2026/0118</text>
+<text x="412.72" y="298.54" font-family="Inter" font-size="11.5" font-weight="400" fill="#6b7684">Pracownik</text>
+<text x="412.72" y="317.62" font-family="Inter" font-size="14" font-weight="700" fill="#1c2430">Jan Kowalski</text>
+<text x="524.52" y="298.54" font-family="Inter" font-size="11.5" font-weight="400" fill="#6b7684">Data wydania</text>
+<text x="524.52" y="317.62" font-family="Inter" font-size="14" font-weight="700" fill="#1c2430">05.11.2026</text>
+<text x="620.67" y="298.54" font-family="Inter" font-size="11.5" font-weight="400" fill="#6b7684">Termin zwrotu</text>
+<text x="620.67" y="317.62" font-family="Inter" font-size="14" font-weight="700" fill="#b4232a">09.11.2026 (3 dni po terminie)</text>
+<rect x="959.75" y="296.23" width="81.25" height="19.22" rx="9.61" fill="#fff2e8"/>
+<text x="967.75" y="309.55" font-family="Inter" font-size="10.5" font-weight="700" fill="#c2520a" letter-spacing="0.11">status: open</text>
+<rect x="270" y="364.33" width="802" height="238.25" rx="12" fill="#ffffff" stroke="#e3e7ec" stroke-width="1"/>
+<rect x="271" y="408.89" width="800" height="1" fill="#e3e7ec"/>
+<path d="M295 381.38 L300.33 384.11 L300.33 390.11 L295 392.84 L289.67 390.11 L289.67 384.11 Z" fill="none" stroke="#1c2430" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M289.67 384.11 L295 386.84 L300.33 384.11" fill="none" stroke="#1c2430" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M295 386.84 L295 392.84" fill="none" stroke="#1c2430" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="312" y="391.23" font-family="Inter" font-size="13.5" font-weight="600" fill="#1c2430">Pozycje do rozliczenia</text>
+<rect x="271" y="409.89" width="248.2" height="33" fill="#ffffff"/>
+<rect x="271" y="441.89" width="248.2" height="1" fill="#e3e7ec"/>
+<text x="287" y="429.52" font-family="Inter" font-size="10" font-weight="700" fill="#7b8694" letter-spacing="0.7">PRZEDMIOT</text>
+<rect x="519.2" y="409.89" width="85.45" height="33" fill="#ffffff"/>
+<rect x="519.2" y="441.89" width="85.45" height="1" fill="#e3e7ec"/>
+<text x="535.2" y="429.52" font-family="Inter" font-size="10" font-weight="700" fill="#7b8694" letter-spacing="0.7">WYDANO</text>
+<rect x="604.66" y="409.89" width="137.48" height="33" fill="#ffffff"/>
+<rect x="604.66" y="441.89" width="137.48" height="1" fill="#e3e7ec"/>
+<text x="620.66" y="429.52" font-family="Inter" font-size="10" font-weight="700" fill="#7b8694" letter-spacing="0.7">ZWRACANA ILOŚĆ</text>
+<rect x="742.14" y="409.89" width="212.92" height="33" fill="#ffffff"/>
+<rect x="742.14" y="441.89" width="212.92" height="1" fill="#e3e7ec"/>
+<text x="758.14" y="429.52" font-family="Inter" font-size="10" font-weight="700" fill="#7b8694" letter-spacing="0.7">STAN TECHNICZNY</text>
+<rect x="955.06" y="409.89" width="115.94" height="33" fill="#ffffff"/>
+<rect x="955.06" y="441.89" width="115.94" height="1" fill="#e3e7ec"/>
+<text x="971.06" y="429.52" font-family="Inter" font-size="10" font-weight="700" fill="#7b8694" letter-spacing="0.7">REZULTAT</text>
+<rect x="271" y="494.95" width="248.2" height="1" fill="#f0f2f5"/>
+<text x="287" y="465.44" font-family="Inter" font-size="12.5" font-weight="600" fill="#1c2430">Wiertarka udarowa Bosch GSB 18V</text>
+<text x="287" y="482.29" font-family="Roboto Mono" font-size="11" font-weight="400" fill="#8a94a0">IT-0142 · SN-88213</text>
+<rect x="519.2" y="494.95" width="85.45" height="1" fill="#f0f2f5"/>
+<text x="535.2" y="473.41" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">1 szt.</text>
+<rect x="604.66" y="494.95" width="137.48" height="1" fill="#f0f2f5"/>
+<rect x="620.66" y="452.42" width="78" height="34" rx="8" fill="#ffffff" stroke="#dde2e8" stroke-width="1"/>
+<text x="632.66" y="473.41" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">1</text>
+<rect x="742.14" y="494.95" width="212.92" height="1" fill="#f0f2f5"/>
+<rect x="758.14" y="452.42" width="176" height="34" rx="8" fill="#ffffff" stroke="#dde2e8" stroke-width="1"/>
+<path d="M916.14 467.92 L919.64 471.42 L923.14 467.92" fill="none" stroke="#8a94a0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="770.14" y="473.41" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">Sprawny (ok)</text>
+<rect x="955.06" y="494.95" width="115.94" height="1" fill="#f0f2f5"/>
+<rect x="971.06" y="459.81" width="81.23" height="19.22" rx="9.61" fill="#e8f6ee"/>
+<text x="979.06" y="473.13" font-family="Inter" font-size="10.5" font-weight="700" fill="#187441" letter-spacing="0.11">Do przyjęcia</text>
+<rect x="271" y="548.02" width="248.2" height="1" fill="#f0f2f5"/>
+<text x="287" y="518.5" font-family="Inter" font-size="12.5" font-weight="600" fill="#1c2430">Młotek murarski 1 kg</text>
+<text x="287" y="535.35" font-family="Roboto Mono" font-size="11" font-weight="400" fill="#8a94a0">IT-0150</text>
+<rect x="519.2" y="548.02" width="85.45" height="1" fill="#f0f2f5"/>
+<text x="535.2" y="526.47" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">2 szt.</text>
+<rect x="604.66" y="548.02" width="137.48" height="1" fill="#f0f2f5"/>
+<rect x="620.66" y="505.48" width="78" height="34" rx="8" fill="#ffffff" stroke="#dde2e8" stroke-width="1"/>
+<text x="632.66" y="526.47" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">2</text>
+<rect x="742.14" y="548.02" width="212.92" height="1" fill="#f0f2f5"/>
+<rect x="758.14" y="505.48" width="176" height="34" rx="8" fill="#ffffff" stroke="#dde2e8" stroke-width="1"/>
+<path d="M916.14 520.98 L919.64 524.48 L923.14 520.98" fill="none" stroke="#8a94a0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="770.14" y="526.47" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">Sprawny (ok)</text>
+<rect x="955.06" y="548.02" width="115.94" height="1" fill="#f0f2f5"/>
+<rect x="971.06" y="512.88" width="81.23" height="19.22" rx="9.61" fill="#e8f6ee"/>
+<text x="979.06" y="526.19" font-family="Inter" font-size="10.5" font-weight="700" fill="#187441" letter-spacing="0.11">Do przyjęcia</text>
+<text x="287" y="571.56" font-family="Inter" font-size="12.5" font-weight="600" fill="#1c2430">Poziomica aluminiowa 120 cm</text>
+<text x="287" y="588.42" font-family="Roboto Mono" font-size="11" font-weight="400" fill="#8a94a0">IT-0151</text>
+<text x="535.2" y="579.53" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">1 szt.</text>
+<rect x="620.66" y="558.55" width="78" height="34" rx="8" fill="#ffffff" stroke="#f2690d" stroke-width="1"/>
+<text x="632.66" y="579.53" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">1</text>
+<rect x="758.14" y="558.55" width="176" height="34" rx="8" fill="#ffffff" stroke="#e9a6a6" stroke-width="1"/>
+<path d="M916.14 574.05 L919.64 577.55 L923.14 574.05" fill="none" stroke="#8a94a0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="770.14" y="579.53" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">Uszkodzony (damaged)</text>
+<rect x="971.06" y="565.94" width="74.27" height="19.22" rx="9.61" fill="#fdecec"/>
+<text x="979.06" y="579.26" font-family="Inter" font-size="10.5" font-weight="700" fill="#b4232a" letter-spacing="0.11">Do serwisu</text>
+<rect x="270" y="616.58" width="802" height="155.5" rx="12" fill="#ffffff" stroke="#e3e7ec" stroke-width="1"/>
+<rect x="271" y="661.14" width="800" height="1" fill="#e3e7ec"/>
+<path d="M300.67 639.36 L300.65 639.74 L300.61 640.13 L300.54 640.53 L300.45 640.93 L300.32 641.32 L300.16 641.7 L299.99 642.05 L299.78 642.4 L299.55 642.73 L299.3 643.05 L299.02 643.35 L298.72 643.63 L298.41 643.89 L298.08 644.12 L297.73 644.32 L297.38 644.5 L297.01 644.66 L296.61 644.79 L296.21 644.89 L295.82 644.97 L295.42 645.01 L295.04 645.03 L294.66 645.02 L294.27 644.98 L293.88 644.91 L293.48 644.82 L293.08 644.69 L292.7 644.54 L292.35 644.37 L292 644.17 L291.66 643.94 L291.34 643.69 L291.04 643.41 L290.76 643.12 L290.5 642.8 L290.27 642.47 L290.06 642.13 L289.87 641.77 L289.72 641.41 L289.58 641.01 L289.47 640.61 L289.4 640.22 L289.35 639.83 L289.33 639.44 L289.34 639.06 L289.38 638.67 L289.44 638.28 L289.53 637.88 L289.65 637.48 L289.8 637.1 L289.97 636.74 L290.17 636.4 L290.39 636.06 L290.64 635.74 L290.91 635.43 L291.21 635.15 L291.52 634.89 L291.85 634.65 L292.19 634.44 L292.55 634.25 L292.91 634.09 L293.3 633.95 L293.7 633.84 L294.1 633.76 L294.49 633.72 L294.88 633.69 L295.26 633.7 L295.64 633.73 L296.04 633.79 L296.44 633.88 L296.83 634 L297.22 634.14 L297.58 634.31 L297.93 634.51 L298.26 634.73 L298.59 634.97 L298.89 635.24 L299.18 635.53 L299.45 635.84 L299.69 636.17 L299.9 636.51 L300.09 636.87 L300.25 637.23 L300.39 637.62 L300.51 638.02 L300.59 638.41 L300.64 638.81 L300.66 639.19 L300.67 639.36 Z" fill="none" stroke="#1c2430" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M295 636.16 L295 639.36 L297.13 640.69" fill="none" stroke="#1c2430" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="312" y="643.48" font-family="Inter" font-size="13.5" font-weight="600" fill="#1c2430">Wcześniejsze zwroty w tym dokumencie</text>
+<text x="953.61" y="643.2" font-family="Inter" font-size="11.5" font-weight="600" fill="#6b7684">tabela loan_return</text>
+<rect x="271" y="662.14" width="133.34" height="33" fill="#fafbfc"/>
+<rect x="271" y="694.14" width="133.34" height="1" fill="#e3e7ec"/>
+<text x="287" y="681.77" font-family="Inter" font-size="10" font-weight="700" fill="#7b8694" letter-spacing="0.7">DATA</text>
+<rect x="404.34" y="662.14" width="283.77" height="33" fill="#fafbfc"/>
+<rect x="404.34" y="694.14" width="283.77" height="1" fill="#e3e7ec"/>
+<text x="420.34" y="681.77" font-family="Inter" font-size="10" font-weight="700" fill="#7b8694" letter-spacing="0.7">PRZEDMIOT</text>
+<rect x="688.11" y="662.14" width="107.06" height="33" fill="#fafbfc"/>
+<rect x="688.11" y="694.14" width="107.06" height="1" fill="#e3e7ec"/>
+<text x="704.11" y="681.77" font-family="Inter" font-size="10" font-weight="700" fill="#7b8694" letter-spacing="0.7">ILOŚĆ</text>
+<rect x="795.17" y="662.14" width="95.14" height="33" fill="#fafbfc"/>
+<rect x="795.17" y="694.14" width="95.14" height="1" fill="#e3e7ec"/>
+<text x="811.17" y="681.77" font-family="Inter" font-size="10" font-weight="700" fill="#7b8694" letter-spacing="0.7">STAN</text>
+<rect x="890.31" y="662.14" width="180.69" height="33" fill="#fafbfc"/>
+<rect x="890.31" y="694.14" width="180.69" height="1" fill="#e3e7ec"/>
+<text x="906.31" y="681.77" font-family="Inter" font-size="10" font-weight="700" fill="#7b8694" letter-spacing="0.7">PRZYJĄŁ</text>
+<rect x="271" y="732.36" width="133.34" height="1" fill="#f0f2f5"/>
+<text x="287" y="718.24" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">08.11.2026</text>
+<rect x="404.34" y="732.36" width="283.77" height="1" fill="#f0f2f5"/>
+<text x="420.34" y="718.24" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">Taśma malarska 48 mm</text>
+<rect x="688.11" y="732.36" width="107.06" height="1" fill="#f0f2f5"/>
+<text x="704.11" y="718.24" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">1 szt.</text>
+<rect x="795.17" y="732.36" width="95.14" height="1" fill="#f0f2f5"/>
+<rect x="811.17" y="704.64" width="28.75" height="19.22" rx="9.61" fill="#e8f6ee"/>
+<text x="819.17" y="717.96" font-family="Inter" font-size="10.5" font-weight="700" fill="#187441" letter-spacing="0.11">ok</text>
+<rect x="890.31" y="732.36" width="180.69" height="1" fill="#f0f2f5"/>
+<text x="906.31" y="718.24" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">Szymon Stępień</text>
+<text x="287" y="756.45" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">08.11.2026</text>
+<text x="420.34" y="756.45" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">Wkręty do drewna 4×50 mm</text>
+<text x="704.11" y="756.45" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">2 opak.</text>
+<rect x="811.17" y="742.86" width="35.44" height="19.22" rx="9.61" fill="#fdecec"/>
+<text x="819.17" y="756.18" font-family="Inter" font-size="10.5" font-weight="700" fill="#b4232a" letter-spacing="0.11">lost</text>
+<text x="906.31" y="756.45" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">Szymon Stępień</text>
+<rect x="1088" y="144.13" width="330" height="475.13" rx="12" fill="#ffffff" stroke="#e3e7ec" stroke-width="1"/>
+<rect x="1089" y="188.69" width="328" height="1" fill="#e3e7ec"/>
+<path d="M1116 161.91 L1118 163.91 L1111 170.91 L1108.33 171.57 L1109 168.91 Z" fill="none" stroke="#1c2430" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1130" y="171.03" font-family="Inter" font-size="13.5" font-weight="600" fill="#1c2430">Protokół usterki</text>
+<text x="1105" y="217.87" font-family="Inter" font-size="11.5" font-weight="600" fill="#4a5563">Przedmiot</text>
+<rect x="1105" y="227.36" width="296" height="34" rx="8" fill="#ffffff" stroke="#dde2e8" stroke-width="1"/>
+<path d="M1383 242.86 L1386.5 246.36 L1390 242.86" fill="none" stroke="#8a94a0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1117" y="248.34" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">Poziomica aluminiowa 120 cm</text>
+<text x="1105" y="286.54" font-family="Inter" font-size="11.5" font-weight="600" fill="#4a5563">Rodzaj zgłoszenia</text>
+<rect x="1105" y="296.03" width="296" height="34" rx="8" fill="#ffffff" stroke="#dde2e8" stroke-width="1"/>
+<path d="M1383 311.53 L1386.5 315.03 L1390 311.53" fill="none" stroke="#8a94a0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1117" y="317.02" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">Uszkodzenie mechaniczne</text>
+<text x="1105" y="355.21" font-family="Inter" font-size="11.5" font-weight="600" fill="#4a5563">Opis usterki</text>
+<rect x="1105" y="364.7" width="296" height="76" rx="8" fill="#ffffff" stroke="#dde2e8" stroke-width="1"/>
+<text x="1117" y="387.75" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">Pęknięta obudowa, libella zalana — sprzęt</text>
+<text x="1117" y="406.5" font-family="Inter" font-size="12.5" font-weight="400" fill="#1c2430">kierowany do serwisu.</text>
+<rect x="1105" y="483.83" width="296" height="1" fill="#e8ebef"/>
+<text x="1105" y="472.75" font-family="Inter" font-size="12.5" font-weight="400" fill="#5b6775">Przyjmuje</text>
+<text x="1323.77" y="472.75" font-family="Inter" font-size="12.5" font-weight="700" fill="#5b6775">Anna Nowak</text>
+<rect x="1105" y="514.95" width="296" height="1" fill="#e8ebef"/>
+<text x="1105" y="503.88" font-family="Inter" font-size="12.5" font-weight="400" fill="#5b6775">Data zwrotu</text>
+<text x="1337.44" y="503.88" font-family="Inter" font-size="12.5" font-weight="700" fill="#5b6775">12.11.2026</text>
+<text x="1105" y="540.54" font-family="Inter" font-size="14" font-weight="600" fill="#1c2430">Nowy status dokumentu</text>
+<rect x="1348.8" y="525.95" width="52.2" height="20.3" rx="10.15" fill="#e9f1fd"/>
+<text x="1356.8" y="539.8" font-family="Inter" font-size="10.5" font-weight="700" fill="#1f5aae" letter-spacing="0.11">settled</text>
+<rect x="1105" y="564.25" width="296" height="38" rx="8" fill="#f2690d" stroke="#f2690d" stroke-width="1"/>
+<path d="M1170.86 583.58 L1173.86 586.58 L1180.2 580.25" fill="none" stroke="#ffffff" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1190.53" y="587.24" font-family="Inter" font-size="12.5" font-weight="600" fill="#ffffff">Zatwierdź zwrot (3 poz.)</text>
+<rect x="1088" y="633.25" width="330" height="74.45" rx="9" fill="#fff8f2" stroke="#ffddc2" stroke-width="1"/>
+<path d="M1109 648.12 L1114.53 657.72 L1103.47 657.72 Z" fill="none" stroke="#f2690d" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1109 651.92 L1109 654.58" fill="none" stroke="#f2690d" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1109 656.32 L1109 656.38" fill="none" stroke="#f2690d" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1126" y="657.11" font-family="Inter" font-size="12" font-weight="400" fill="#8a4a10">Zwrot uszkodzonej sztuki zdejmuje ją ze stanu i</text>
+<text x="1126" y="674.5" font-family="Inter" font-size="12" font-weight="400" fill="#8a4a10">ustawia status</text>
+<text x="1210.78" y="674.61" font-family="Roboto Mono" font-size="11.5" font-weight="400" fill="#56616e">W naprawie / serwis</text>
+<text x="1345.28" y="674.5" font-family="Inter" font-size="12" font-weight="400" fill="#8a4a10">w ramach</text>
+<text x="1126" y="692.17" font-family="Inter" font-size="12" font-weight="400" fill="#8a4a10">jednej transakcji ACID.</text>
+</g>
+</svg>

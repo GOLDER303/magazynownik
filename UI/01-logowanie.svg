@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+<g id="01-logowanie">
+<rect x="0" y="0" width="1440" height="900" fill="#171e29"/>
+<rect x="370" y="0" width="700" height="900" fill="#ffffff"/>
+<path d="M720 180.8 L735.81 189.78 L720 198.77 L704.19 189.78 Z" fill="#ff9a4d"/>
+<path d="M704.19 189.78 L720 198.77 L720 212.42 L704.19 203.44 Z" fill="#f2690d"/>
+<path d="M735.81 189.78 L720 198.77 L720 212.42 L735.81 203.44 Z" fill="#1c2430"/>
+<path d="M732.75 199.18 L732.5 199.6 L732.22 199.99 L731.9 200.34 L731.57 200.64 L731.23 200.88 L730.88 201.05 L730.54 201.14 L730.22 201.16 L729.93 201.11 L729.68 200.98 L729.47 200.78 L729.31 200.51 L729.21 200.19 L729.16 199.82 L729.18 199.41 L729.25 198.98 L729.38 198.54 L729.56 198.09 L729.79 197.66 L730.06 197.26 L730.37 196.89 L730.7 196.58 L731.04 196.32 L731.39 196.12 L731.73 196 L732.05 195.95 L732.35 195.98 L732.62 196.09 L732.75 196.17" fill="none" stroke="#ffb375" stroke-width="1.8" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M730.09 199.19 L729.74 199.38 L729.4 199.58 L729.05 199.78 L728.7 199.98 L728.35 200.17 L728.01 200.37 L727.66 200.57 L727.31 200.77 L726.96 200.96 L726.62 201.16 L726.27 201.36 L725.92 201.56 L725.57 201.75 L725.23 201.95 L724.88 202.15 L724.53 202.35 L724.18 202.54 L723.84 202.74 L723.49 202.94 L723.14 203.14 L723.07 203.18" fill="none" stroke="#ffb375" stroke-width="1.98" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="650.97" y="251.01" font-family="Inter" font-size="19" font-weight="600" fill="#1c2430" letter-spacing="-0.2">Magazynownik</text>
+<text x="611" y="272.47" font-family="Inter" font-size="10.5" font-weight="400" fill="#8a94a0" letter-spacing="0.95">SYSTEM ZARZĄDZANIA MAGAZYNEM</text>
+<text x="658.2" y="327.6" font-family="Inter" font-size="24" font-weight="600" fill="#1c2430" letter-spacing="-0.4">Logowanie</text>
+<text x="557.94" y="357.9" font-family="Inter" font-size="13" font-weight="400" fill="#6b7684">Podaj dane dostępowe otrzymane od administratora.</text>
+<text x="534" y="401.2" font-family="Inter" font-size="11.5" font-weight="600" fill="#4a5563">Login</text>
+<rect x="534" y="410.69" width="372" height="44" rx="8" fill="#ffffff" stroke="#f2690d" stroke-width="1"/>
+<text x="546" y="436.81" font-family="Inter" font-size="13.5" font-weight="400" fill="#1c2430">m.ramus</text>
+<text x="534" y="481.87" font-family="Inter" font-size="11.5" font-weight="600" fill="#4a5563">Hasło</text>
+<rect x="534" y="491.36" width="372" height="44" rx="8" fill="#ffffff" stroke="#dde2e8" stroke-width="1"/>
+<text x="546" y="517.48" font-family="Inter" font-size="13.5" font-weight="400" fill="#1c2430">•••••••••••</text>
+<rect x="534" y="551.05" width="16" height="16" rx="4" fill="#f2690d" stroke="#f2690d" stroke-width="1"/>
+<path d="M538.5 554.55 L541.1 558.95 L545.9 552.35" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="558" y="563.22" font-family="Inter" font-size="12" font-weight="400" fill="#5b6775">Zapamiętaj mnie</text>
+<text x="792.22" y="563.22" font-family="Inter" font-size="12" font-weight="600" fill="#f2690d">Nie pamiętam hasła</text>
+<rect x="534" y="587.75" width="372" height="38" rx="8" fill="#f2690d" stroke="#f2690d" stroke-width="1"/>
+<text x="687.17" y="610.74" font-family="Inter" font-size="12.5" font-weight="600" fill="#ffffff">Zaloguj się</text>
+<rect x="534" y="649.75" width="372" height="1" fill="#e3e7ec"/>
+<text x="569.92" y="680.93" font-family="Inter" font-size="11.5" font-weight="400" fill="#8a94a0">Rola użytkownika rozpoznawana jest automatycznie po</text>
+<text x="684.09" y="700.47" font-family="Inter" font-size="11.5" font-weight="400" fill="#8a94a0">zalogowaniu:</text>
+<text x="544.48" y="720.02" font-family="Inter" font-size="11.5" font-weight="700" fill="#5b6775">Administrator techniczny · Magazynier · Pracownik budowlany</text>
+<text x="565" y="869.06" font-family="Inter" font-size="11" font-weight="400" fill="#9aa5b1">Bazy danych 2 — projekt · PostgreSQL · Spring Boot · React</text>
+</g>
+</svg>
